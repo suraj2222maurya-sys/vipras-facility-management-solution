@@ -25,6 +25,21 @@ export default function TrustNumbersSection() {
   return (
     <section className="bg-[#fffaf2] px-5 py-16 sm:px-8 lg:px-12">
       <div className="mx-auto max-w-7xl">
+       <div className="mb-10 max-w-3xl">
+  <p className="text-sm font-black uppercase tracking-[0.24em] text-[#b98a3c]">
+  Trust Bar: Company Strength in Numbers
+</p>
+
+  <h2 className="mt-4 text-3xl font-black leading-tight text-[#2f281f] sm:text-4xl">
+    Proven Facility Management Experience Backed by People, Sites and Reliable Service Support
+  </h2>
+
+  <p className="mt-5 text-base font-semibold leading-8 text-[#6b5a45] sm:text-lg">
+    Vipras brings together years of facility management experience, trained
+    service teams and multi-site operational support to help businesses maintain
+    cleaner, safer and better-managed workplaces with confidence.
+  </p>
+</div>
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {trustNumbers.map((item) => (
             <div

@@ -79,7 +79,7 @@ export default function HousekeepingSoftServicesPage() {
     <main className="overflow-hidden bg-[#fffaf2]">
       <section className="relative">
         <img
-          src="/housekeeping-soft-services-banner.png.png"
+          src="/housekeeping-soft-services-banner.png (4).png.png"
           alt="Vipras Facility Management Solution professional housekeeping and soft services team"
           className="h-auto w-full object-contain"
         />

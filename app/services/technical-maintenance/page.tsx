@@ -91,7 +91,7 @@ export default function TechnicalMaintenancePage() {
       <section className="relative overflow-hidden bg-[#fffaf2]">
   <div className="relative">
     <img
-      src="/technical-maintenance-banner.png.png"
+      src="/technical-maintenance-banner.png (2).png"
       alt="Vipras Facility Management Solution technical maintenance team"
       className="h-auto w-full object-contain"
     />
