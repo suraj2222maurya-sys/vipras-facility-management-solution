@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function HeroSection() {
   return (
     <section className="relative w-full overflow-hidden bg-[#0f1713]">
-      <div className="relative min-h-[680px] w-full sm:min-h-[720px] lg:min-h-[calc(100vh-76px)]">
+     <div className="relative min-h-[520px] w-full sm:min-h-[720px] lg:min-h-[calc(100vh-76px)]">
         <video
           className="absolute inset-0 h-full w-full object-contain md:object-cover"
           src="/hero-video.mp4.mp4"
@@ -17,7 +17,7 @@ export default function HeroSection() {
 
         <div className="absolute inset-0 bg-gradient-to-r from-black/35 via-black/10 to-transparent" />
 
-        <div className="relative z-10 flex min-h-[680px] w-full items-start px-5 pb-20 pt-12 sm:min-h-[720px] sm:items-center sm:px-8 sm:py-20 lg:min-h-[calc(100vh-76px)] lg:px-12">
+       <div className="relative z-10 flex min-h-[520px] w-full items-start px-5 pb-10 pt-12 sm:min-h-[720px] sm:items-center sm:px-8 sm:py-20 lg:min-h-[calc(100vh-76px)] lg:px-12">
           <div className="max-w-4xl">
             <p className="mb-5 bg-gradient-to-r from-[#ff8bdc] via-[#b58cff] to-[#25d8ff] bg-clip-text text-xs font-black uppercase tracking-[0.28em] text-transparent drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)] sm:text-sm">
               Facility Management Services in Chennai & Pan India
