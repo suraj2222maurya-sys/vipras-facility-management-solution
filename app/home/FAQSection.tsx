@@ -4,15 +4,15 @@ import { useState } from "react";
 
 const faqs = [
   {
-    question: "What facility management services does Vipras provide?",
-    answer:
-      "Vipras provides security services, housekeeping and soft services, industrial manpower supply, technical and MEP maintenance, fire and safety manpower, and integrated facility management support for business sites.",
-  },
+  question: "What facility management services does Vipras provide in Chennai?",
+  answer:
+    "Vipras provides facility management services in Chennai and across Tamil Nadu, including security services, housekeeping and soft services, industrial manpower supply, technical and Mechanical, Electrical and Plumbing maintenance, fire and safety manpower, and integrated facility management support for business sites.",
+},
   {
-    question: "Do you provide services across Chennai and Tamil Nadu?",
-    answer:
-      "Yes. Vipras supports businesses across Chennai, Tamil Nadu and India with trained teams, site supervision and professional facility service operations.",
-  },
+  question: "Do you provide facility management services across Chennai, Tamil Nadu and Pan India?",
+  answer:
+    "Yes. Vipras supports businesses across Chennai, Tamil Nadu and Pan India service locations with trained teams, site supervision and professional facility management operations.",
+},
   {
     question: "Can Vipras support factories, IT parks, hospitals and apartments?",
     answer:

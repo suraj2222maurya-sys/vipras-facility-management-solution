@@ -37,21 +37,21 @@ const industries = [
 
 export default function IndustriesWeServeSection() {
   return (
-    <section className="relative overflow-hidden bg-[#f8f1e7] px-5 py-16 sm:px-8 lg:px-12">
-      <div className="absolute inset-0 bg-[url('/industries-bg.jpg')] bg-cover bg-center" />
+    <section className="relative overflow-hidden bg-[#f8f1e7] px-5 pb-16 pt-64 sm:px-8 sm:py-16 lg:px-12">
+     <div className="absolute inset-0 bg-[url('/industries-bg.jpg')] bg-[length:100%_auto] bg-top bg-no-repeat sm:bg-cover sm:bg-center" />
 
-      <div className="absolute inset-0 bg-[#fffaf2]/35" />
-      <div className="absolute inset-0 bg-gradient-to-r from-[#1f2a24]/85 via-[#1f2a24]/55 to-[#1f2a24]/25" />
+      <div className="absolute inset-0 bg-[#fffaf2]/10" />
+     <div className="absolute inset-0 bg-gradient-to-b from-[#1f2a24]/35 via-[#1f2a24]/55 to-[#1f2a24]/80 sm:bg-gradient-to-r sm:from-[#1f2a24]/85 sm:via-[#1f2a24]/55 sm:to-[#1f2a24]/25" />
 
       <div className="relative mx-auto max-w-7xl">
-        <div className="max-w-3xl">
+        <div className="max-w-3xl rounded-3xl bg-[#1f2a24]/55 p-5 backdrop-blur-[2px] sm:bg-transparent sm:p-0 sm:backdrop-blur-0">
           <p className="text-xs font-black uppercase tracking-[0.28em] text-[#d6b06a] sm:text-sm">
             Industries We Serve
           </p>
 
           <h2 className="mt-3 max-w-3xl text-2xl font-black leading-tight text-white sm:text-3xl lg:text-4xl">
-            Trusted Facility Management Support for High-Demand Industries
-          </h2>
+  Trusted Facility Management Support for High-Demand Industries in Chennai and Across India
+</h2>
 
           <p className="mt-4 max-w-2xl text-base font-medium leading-7 text-white/90 sm:text-lg">
   Vipras partners with high-demand industries that require consistent safety,

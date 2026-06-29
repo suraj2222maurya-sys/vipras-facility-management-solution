@@ -1,12 +1,12 @@
 export default function WhyChooseViprasSection() {
   return (
     <section className="relative overflow-hidden bg-[#10130f] px-5 py-20 sm:px-8 lg:px-12">
-     <div className="absolute inset-0 bg-[url('/why-choose-bg.png.png')] bg-contain bg-center bg-no-repeat" />
+     <div className="absolute inset-0 bg-[url('/why-choose-bg.png.png')] bg-[length:100%_auto] bg-top bg-no-repeat sm:bg-contain sm:bg-center" />
      <div className="absolute inset-0 bg-black/20" />
-      <div className="absolute inset-0 bg-gradient-to-r from-black/45 via-black/20 to-transparent" />
+    <div className="absolute inset-0 bg-gradient-to-b from-black/5 via-black/25 to-black/85 sm:bg-gradient-to-r sm:from-black/45 sm:via-black/20 sm:to-transparent" />
 
       <div className="relative mx-auto flex min-h-[520px] max-w-7xl items-center py-10">
-  <div className="max-w-3xl rounded-3xl border border-white/20 bg-black/35 p-6 shadow-2xl shadow-black/20 backdrop-blur-md sm:p-8 lg:p-10">
+  <div className="max-w-3xl rounded-3xl border border-white/20 bg-black/60 p-5 shadow-2xl shadow-black/25 backdrop-blur-[2px] sm:bg-black/35 sm:p-8 sm:backdrop-blur-md lg:p-10">
     <p className="text-xs font-black uppercase tracking-[0.28em] text-[#d6b06a] sm:text-sm">
       Why Choose Vipras
     </p>
@@ -16,40 +16,43 @@ export default function WhyChooseViprasSection() {
     </h2>
 
     <p className="mt-5 text-base font-medium leading-8 text-white/90 sm:text-lg">
-      Vipras Facility Management Solution combines trained manpower, strong site
-      supervision, compliance-focused operations and responsive service support
-      to help businesses maintain clean, secure and efficient environments
-      across Chennai, Tamil Nadu and India.
-    </p>
+  Vipras Facility Management Solutions combines trained manpower, active site
+  supervision, safety-focused operations and responsive service coordination to
+  help businesses maintain cleaner, safer and more efficient workplaces across
+  Chennai, Tamil Nadu and Pan India service locations.
+</p>
 
-    <div className="mt-7 grid gap-3 sm:grid-cols-2">
+    <div className="mt-6 grid gap-3 sm:mt-7 sm:grid-cols-2">
       <div className="rounded-2xl border border-white/15 bg-white/10 p-4">
-        <h3 className="text-sm font-black text-white">Verified Workforce</h3>
-        <p className="mt-2 text-sm leading-6 text-white/75">
-          Trained teams deployed with discipline, responsibility and professional standards.
-        </p>
-      </div>
-
+  <h3 className="text-sm font-black text-white">Trained Workforce</h3>
+ <p className="mt-2 hidden text-sm leading-6 text-white/75 sm:block">
+    Skilled and trained teams deployed with discipline, responsibility and clear
+    service expectations for daily facility operations.
+  </p>
+</div>
       <div className="rounded-2xl border border-white/15 bg-white/10 p-4">
-        <h3 className="text-sm font-black text-white">Strong Supervision</h3>
-        <p className="mt-2 text-sm leading-6 text-white/75">
-          Active site monitoring to maintain service quality and operational control.
-        </p>
-      </div>
-
-      <div className="rounded-2xl border border-white/15 bg-white/10 p-4">
-        <h3 className="text-sm font-black text-white">Compliance Focused</h3>
-        <p className="mt-2 text-sm leading-6 text-white/75">
-          Service processes built around safety, documentation and business reliability.
-        </p>
-      </div>
+  <h3 className="text-sm font-black text-white">Active Site Supervision</h3>
+  <p className="mt-2 text-sm leading-6 text-white/75">
+    On-site supervision and service coordination help maintain quality,
+    attendance discipline and smooth day-to-day facility operations.
+  </p>
+</div>
 
       <div className="rounded-2xl border border-white/15 bg-white/10 p-4">
-        <h3 className="text-sm font-black text-white">Pan-India Support</h3>
-        <p className="mt-2 text-sm leading-6 text-white/75">
-          Facility support for corporate, industrial and commercial sites across India.
-        </p>
-      </div>
+  <h3 className="text-sm font-black text-white">Safety-Focused Operations</h3>
+  <p className="mt-2 text-sm leading-6 text-white/75">
+    Service processes are planned around safety awareness, site discipline,
+    documentation support and reliable business continuity.
+  </p>
+</div>
+
+      <div className="rounded-2xl border border-white/15 bg-white/10 p-4">
+  <h3 className="text-sm font-black text-white">Chennai & Pan India Support</h3>
+  <p className="mt-2 text-sm leading-6 text-white/75">
+    Facility management support for corporate, industrial, commercial and
+    institutional sites across Chennai, Tamil Nadu and wider India.
+  </p>
+</div>
     </div>
   </div>
 </div>

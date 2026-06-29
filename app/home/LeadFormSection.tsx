@@ -42,19 +42,20 @@ Message: ${formData.get("message")}
     <section className="bg-[#fffaf2] px-5 py-16 sm:px-8 lg:px-12">
       <div className="mx-auto max-w-7xl">
         <div className="mb-10 max-w-3xl">
-          <p className="text-xs font-black uppercase tracking-[0.28em] text-[#b98a3c] sm:text-sm">
-            Request a Consultation
-          </p>
+  <p className="text-xs font-black uppercase tracking-[0.28em] text-[#b98a3c] sm:text-sm">
+    Request a Facility Management Consultation
+  </p>
 
-          <h2 className="mt-3 text-2xl font-black leading-tight text-[#2f281f] sm:text-3xl lg:text-4xl">
-            Talk to Vipras for Professional Facility Management Support
-          </h2>
+  <h2 className="mt-3 text-2xl font-black leading-tight text-[#2f281f] sm:text-3xl lg:text-4xl">
+    Get a Professional Facility Management Proposal for Your Site in Chennai or Across India
+  </h2>
 
-          <p className="mt-4 text-base leading-7 text-[#6b5a45] sm:text-lg">
-            Share your requirement and our team will connect with you to
-            understand your site, service needs and operational expectations.
-          </p>
-        </div>
+  <p className="mt-4 text-base leading-7 text-[#6b5a45] sm:text-lg">
+    Share your housekeeping, security, manpower, technical maintenance or
+    integrated facility management requirement, and our team will connect with
+    you to understand your site, location and service expectations.
+  </p>
+</div>
 
         <div className="grid gap-8 lg:grid-cols-2 lg:items-start">
           <div className="rounded-3xl border border-[#eadfca] bg-white p-4 shadow-xl shadow-black/10">
@@ -99,9 +100,9 @@ Message: ${formData.get("message")}
             </h3>
 
             <p className="mt-3 text-sm leading-7 text-[#6b5a45]">
-              Fill the form and your enquiry details will be sent directly to
-              our WhatsApp team for quick follow-up.
-            </p>
+  Fill the form and your enquiry details will be sent directly to our team on
+  WhatsApp for faster service coordination and follow-up.
+</p>
 
             <form onSubmit={handleSubmit} className="mt-7 space-y-4">
               <div className="grid gap-4 sm:grid-cols-2">

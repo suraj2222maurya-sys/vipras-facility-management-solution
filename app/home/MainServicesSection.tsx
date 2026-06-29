@@ -60,20 +60,21 @@ export default function MainServicesSection() {
 
       <div className="relative mx-auto max-w-7xl">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="text-xs font-black uppercase tracking-[0.28em] text-[#b98a3c] sm:text-sm">
-            Our Core Services
-          </p>
+  <p className="text-xs font-black uppercase tracking-[0.28em] text-[#b98a3c] sm:text-sm">
+    Core Facility Management Services
+  </p>
 
-          <h2 className="mx-auto mt-3 max-w-2xl text-xl font-black leading-tight text-[#2f281f] sm:text-2xl lg:text-3xl">
-            Facility Management Services Built for Reliable Business Operations
-          </h2>
+  <h2 className="mx-auto mt-3 max-w-3xl text-xl font-black leading-tight text-[#2f281f] sm:text-2xl lg:text-3xl">
+    Integrated Facility Management Services in Chennai for Safer, Cleaner and Better-Managed Workplaces
+  </h2>
 
-          <p className="mt-4 text-base leading-7 text-[#6b5a45] sm:text-lg">
-            Vipras provides trusted facility management services for corporate,
-            industrial, commercial and institutional environments across Chennai,
-            Tamil Nadu and India.
-          </p>
-        </div>
+  <p className="mt-4 text-base leading-7 text-[#6b5a45] sm:text-lg">
+    Vipras supports corporate offices, industries, institutions, commercial
+    properties and residential communities with housekeeping, security,
+    manpower, technical maintenance, fire safety and end-to-end facility
+    operations across Chennai, Tamil Nadu and Pan India service requirements.
+  </p>
+</div>
 
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => (
