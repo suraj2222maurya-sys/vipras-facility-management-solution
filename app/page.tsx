@@ -23,6 +23,7 @@ authors: [
 ],
 creator: "Vipras Facility Management Solutions Private Limited",
 publisher: "Vipras Facility Management Solutions Private Limited",
+category: "Facility Management Services",
   keywords: [
   "facility management services in Chennai",
   "facility management services",
@@ -103,13 +104,33 @@ other: {
 const localBusinessJsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
+    "@id": "https://www.viprasfacility.com/#localbusiness",
   name: "Vipras Facility Management Solutions Private Limited",
+  legalName: "Vipras Facility Management Solutions Private Limited",
+  foundingDate: "2007",
   alternateName: "Vipras Facility Management Solutions",
   url: "https://www.viprasfacility.com",
+    mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": "https://www.viprasfacility.com/",
+  },
+  parentOrganization: {
+  "@id": "https://www.viprasfacility.com/#organization",
+},
+    inLanguage: "en-IN",
   logo: "https://www.viprasfacility.com/og-image.jpg.png.png",
   image: "https://www.viprasfacility.com/og-image.jpg.png.png",
   telephone: "+919710946484",
   email: "viprascrm@gmail.com",
+  priceRange: "Custom quote based on site requirement",
+  potentialAction: {
+  "@type": "ContactAction",
+  name: "Get Free Quote",
+  target: [
+    "https://wa.me/919710946484",
+    "mailto:viprascrm@gmail.com",
+  ],
+},
   description:
     "Vipras Facility Management Solutions provides facility management services in Chennai with Pan India support, including security services, housekeeping services, manpower services, technical maintenance, fire safety and integrated facility management services.",
   address: {
@@ -120,6 +141,12 @@ const localBusinessJsonLd = {
     postalCode: "600119",
     addressCountry: "IN",
   },
+  geo: {
+  "@type": "GeoCoordinates",
+  latitude: 12.9010,
+  longitude: 80.2279,
+},
+hasMap: "https://share.google/2CLkutu58RSNef4Gm",
   areaServed: [
     {
       "@type": "City",
@@ -151,6 +178,22 @@ const localBusinessJsonLd = {
       url: "https://wa.me/919710946484",
     },
   ],
+  openingHoursSpecification: [
+  {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday",
+    ],
+    opens: "00:00",
+    closes: "23:59",
+  },
+],
   serviceType: [
     "Facility Management Services",
     "Integrated Facility Management Services",
@@ -166,6 +209,66 @@ const localBusinessJsonLd = {
     "AC Maintenance Services",
     "Fire Safety Manpower",
   ],
+  hasOfferCatalog: {
+  "@type": "OfferCatalog",
+  name: "Facility Management Services Offered by Vipras",
+  itemListElement: [
+    {
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: "Integrated Facility Management Services",
+        serviceType: "Integrated Facility Management Services",
+        areaServed: "Chennai, Tamil Nadu and Pan India",
+      },
+    },
+    {
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: "Security Services",
+        serviceType: "Security Guard Services",
+        areaServed: "Chennai, Tamil Nadu and Pan India",
+      },
+    },
+    {
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: "Housekeeping Services",
+        serviceType: "Housekeeping and Cleaning Services",
+        areaServed: "Chennai, Tamil Nadu and Pan India",
+      },
+    },
+    {
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: "Manpower Services",
+        serviceType: "Industrial Manpower Supply Services",
+        areaServed: "Chennai, Tamil Nadu and Pan India",
+      },
+    },
+    {
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: "Technical Maintenance Services",
+        serviceType: "MEP, Electrical, Plumbing and AC Maintenance Services",
+        areaServed: "Chennai, Tamil Nadu and Pan India",
+      },
+    },
+    {
+      "@type": "Offer",
+      itemOffered: {
+        "@type": "Service",
+        name: "Fire Safety Manpower",
+        serviceType: "Fire and Safety Manpower Services",
+        areaServed: "Chennai, Tamil Nadu and Pan India",
+      },
+    },
+  ],
+},
   sameAs: [
     "https://www.linkedin.com/company/vipras-facility-management-private-limited/",
     "https://www.facebook.com/profile.php?id=61583160419137",
@@ -176,6 +279,10 @@ const localBusinessJsonLd = {
 const faqPageJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+    "@id": "https://www.viprasfacility.com/#faq",
+      isPartOf: {
+    "@id": "https://www.viprasfacility.com/#webpage",
+  },
   mainEntity: [
     {
       "@type": "Question",
@@ -222,11 +329,14 @@ const faqPageJsonLd = {
 const websiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
+    "@id": "https://www.viprasfacility.com/#website",
   name: "Vipras Facility Management Solutions",
   alternateName: "Vipras Facility Management Solutions Private Limited",
   url: "https://www.viprasfacility.com",
+    inLanguage: "en-IN",
   publisher: {
     "@type": "Organization",
+        "@id": "https://www.viprasfacility.com/#organization",
     name: "Vipras Facility Management Solutions Private Limited",
     url: "https://www.viprasfacility.com",
     logo: "https://www.viprasfacility.com/og-image.jpg.png.png",
@@ -235,7 +345,12 @@ const websiteJsonLd = {
 const servicesItemListJsonLd = {
   "@context": "https://schema.org",
   "@type": "ItemList",
+    "@id": "https://www.viprasfacility.com/#services",
   name: "Vipras Facility Management Services",
+    numberOfItems: 6,
+    mainEntityOfPage: {
+  "@id": "https://www.viprasfacility.com/#webpage",
+},
   itemListElement: [
     {
       "@type": "ListItem",
@@ -278,6 +393,7 @@ const servicesItemListJsonLd = {
 const breadcrumbJsonLd = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
+    "@id": "https://www.viprasfacility.com/#breadcrumb",
   itemListElement: [
     {
       "@type": "ListItem",
@@ -287,16 +403,102 @@ const breadcrumbJsonLd = {
     },
   ],
 };
+const webPageJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://www.viprasfacility.com/#webpage",
+  url: "https://www.viprasfacility.com/",
+  name: "Facility Management Services in Chennai | Vipras Facility Management Solutions",
+  description:
+    "Vipras Facility Management Solutions provides facility management services in Chennai with Pan India support, including security, housekeeping, manpower, technical maintenance, fire safety and integrated facility management for corporate, industrial, commercial and institutional sites.",
+  inLanguage: "en-IN",
+  isAccessibleForFree: true,
+  keywords: [
+  "Facility Management Services in Chennai",
+  "Integrated Facility Management Services",
+  "Security Services in Chennai",
+  "Housekeeping Services in Chennai",
+  "Manpower Services in Chennai",
+  "Technical Maintenance Services",
+  "MEP Maintenance Services",
+  "Fire Safety Manpower",
+  "Facility Management Services Tamil Nadu",
+  "Facility Management Services Pan India",
+],
+  dateModified: "2026-06-30",
+  potentialAction: {
+  "@type": "ContactAction",
+  name: "Get Free Quote",
+  target: [
+    "https://wa.me/919710946484",
+    "mailto:viprascrm@gmail.com",
+  ],
+},
+    mainEntity: {
+    "@id": "https://www.viprasfacility.com/#services",
+  },
+  hasPart: {
+  "@id": "https://www.viprasfacility.com/#faq",
+},
+  isPartOf: {
+    "@id": "https://www.viprasfacility.com/#website",
+  },
+  about: {
+    "@id": "https://www.viprasfacility.com/#localbusiness",
+  },
+  publisher: {
+    "@id": "https://www.viprasfacility.com/#organization",
+  },
+  breadcrumb: {
+    "@id": "https://www.viprasfacility.com/#breadcrumb",
+  },
+  primaryImageOfPage: {
+    "@type": "ImageObject",
+    "@id": "https://www.viprasfacility.com/#primaryimage",
+    url: "https://www.viprasfacility.com/og-image.jpg.png.png",
+    width: 1200,
+    height: 630,
+    caption: "Vipras Facility Management Solutions - Facility Management Services in Chennai",
+    representativeOfPage: true,
+  },
+};
 const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
+    "@id": "https://www.viprasfacility.com/#organization",
   name: "Vipras Facility Management Solutions Private Limited",
+  legalName: "Vipras Facility Management Solutions Private Limited",
+  foundingDate: "2007",
+  slogan: "Safe, Clean and Well-Managed Workplaces",
   alternateName: "Vipras Facility Management Solutions",
   url: "https://www.viprasfacility.com",
+  mainEntityOfPage: {
+  "@type": "WebPage",
+  "@id": "https://www.viprasfacility.com/",
+},
+  inLanguage: "en-IN",
   logo: "https://www.viprasfacility.com/og-image.jpg.png.png",
   image: "https://www.viprasfacility.com/og-image.jpg.png.png",
   email: "viprascrm@gmail.com",
   telephone: "+919710946484",
+  contactPoint: [
+  {
+    "@type": "ContactPoint",
+    telephone: "+919710946484",
+    contactType: "customer service",
+    email: "viprascrm@gmail.com",
+    areaServed: "IN",
+    availableLanguage: ["English", "Hindi", "Tamil"],
+  },
+  {
+    "@type": "ContactPoint",
+    telephone: "+919710946484",
+    contactType: "WhatsApp enquiry",
+    url: "https://wa.me/919710946484",
+    areaServed: "IN",
+    availableLanguage: ["English", "Hindi", "Tamil"],
+  },
+],
   address: {
     "@type": "PostalAddress",
     streetAddress: "No-495 A, Village High Rd, Sholinganallur",
@@ -305,6 +507,32 @@ const organizationJsonLd = {
     postalCode: "600119",
     addressCountry: "IN",
   },
+  areaServed: [
+  {
+    "@type": "City",
+    name: "Chennai",
+  },
+  {
+    "@type": "State",
+    name: "Tamil Nadu",
+  },
+  {
+    "@type": "Country",
+    name: "India",
+  },
+],
+knowsAbout: [
+  "Facility Management Services",
+  "Integrated Facility Management",
+  "Security Services",
+  "Housekeeping Services",
+  "Manpower Services",
+  "Technical Maintenance Services",
+  "MEP Maintenance Services",
+  "Fire Safety Manpower",
+  "Corporate Facility Management",
+  "Industrial Facility Management",
+],
   sameAs: [
     "https://www.linkedin.com/company/vipras-facility-management-private-limited/",
     "https://www.facebook.com/profile.php?id=61583160419137",
@@ -321,6 +549,12 @@ export default function Home() {
           __html: JSON.stringify(localBusinessJsonLd),
         }}
       />
+      <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify(webPageJsonLd),
+  }}
+/>
 <script
   type="application/ld+json"
   dangerouslySetInnerHTML={{

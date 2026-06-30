@@ -1,27 +1,30 @@
 ﻿import type { MetadataRoute } from "next";
 
 const baseUrl = "https://www.viprasfacility.com";
-
+const homeLastModified = new Date("2026-06-30");
+const servicesLastModified = new Date("2026-06-30");
+const servicePagesLastModified = new Date("2026-06-30");
+const companyPagesLastModified = new Date("2026-06-30");
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes: MetadataRoute.Sitemap = [
     {
-      url: `${baseUrl}/`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 1,
-    },
+  url: `${baseUrl}/`,
+  lastModified: homeLastModified,
+  changeFrequency: "weekly",
+  priority: 1,
+},
     {
-      url: `${baseUrl}/about-us`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
+  url: `${baseUrl}/about-us`,
+  lastModified: companyPagesLastModified,
+  changeFrequency: "monthly",
+  priority: 0.8,
+},
     {
-      url: `${baseUrl}/services`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.95,
-    },
+  url: `${baseUrl}/services`,
+  lastModified: servicesLastModified,
+  changeFrequency: "weekly",
+  priority: 0.95,
+},
     {
       url: `${baseUrl}/services/security-services`,
       lastModified: new Date(),
@@ -29,32 +32,32 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/services/housekeeping-soft-services`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
+  url: `${baseUrl}/services/housekeeping-soft-services`,
+  lastModified: servicePagesLastModified,
+  changeFrequency: "monthly",
+  priority: 0.9,
+},
     {
-      url: `${baseUrl}/services/industrial-manpower-supply`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
+  url: `${baseUrl}/services/industrial-manpower-supply`,
+  lastModified: servicePagesLastModified,
+  changeFrequency: "monthly",
+  priority: 0.9,
+},
     {
       url: `${baseUrl}/services/technical-maintenance`,
-      lastModified: new Date(),
+      lastModified: servicePagesLastModified,
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
       url: `${baseUrl}/services/fire-safety-manpower`,
-      lastModified: new Date(),
+      lastModified: servicePagesLastModified,
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
       url: `${baseUrl}/services/integrated-facility-management`,
-      lastModified: new Date(),
+     lastModified: servicePagesLastModified,
       changeFrequency: "monthly",
       priority: 0.9,
     },
