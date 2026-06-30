@@ -15,7 +15,7 @@ export default function HeroSection() {
     aria-label="Vipras Facility Management Services team video"
   />
 
-  <div className="bg-[ #FDF5E6] px-5 pb-8 pt-4">
+  <div className="bg-[#FFFFF4] px-5 pb-8 pt-4">
     <p className="mb-4 bg-gradient-to-r from-[#ff8bdc] via-[#b58cff] to-[#25d8ff] bg-clip-text text-xs font-black uppercase tracking-[0.28em] text-transparent drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)]">
       Facility Management Services in Chennai & Pan India
     </p>
