@@ -3,42 +3,39 @@ import Link from "next/link";
 export default function HeroSection() {
   return (
     <section className="w-full overflow-hidden bg-[#0f1713]">
-      <div className="sm:hidden">
-        <div className="px-5 pb-5 pt-4">
-          <p className="mb-5 bg-gradient-to-r from-[#ff8bdc] via-[#b58cff] to-[#25d8ff] bg-clip-text text-xs font-black uppercase tracking-[0.28em] text-transparent drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)]">
-            Facility Management Services in Chennai & Pan India
-          </p>
+     <div className="sm:hidden">
+  <video
+    className="block h-auto w-full object-contain"
+    src="/hero-video.mp4.mp4"
+    autoPlay
+    muted
+    loop
+    playsInline
+    preload="metadata"
+    aria-label="Vipras Facility Management Services team video"
+  />
 
-          <h1 className="bg-gradient-to-r from-[#16b8e8] via-[#f4fbff] to-[#ff8a24] bg-clip-text text-3xl font-black leading-[1.12] text-transparent drop-shadow-[0_4px_12px_rgba(0,0,0,0.85)]">
-            Facility Management Services Company in Chennai for Safe, Clean &
-            Well-Managed Workplaces
-          </h1>
-        </div>
+  <div className="bg-[#2f281f] px-5 pb-8 pt-4">
+    <p className="mb-4 bg-gradient-to-r from-[#ff8bdc] via-[#b58cff] to-[#25d8ff] bg-clip-text text-xs font-black uppercase tracking-[0.28em] text-transparent drop-shadow-[0_2px_8px_rgba(0,0,0,0.95)]">
+      Facility Management Services in Chennai & Pan India
+    </p>
 
-        <video
-          className="block h-auto w-full object-contain"
-          src="/hero-video.mp4.mp4"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          aria-label="Vipras Facility Management Services team video"
-        />
+    <h1 className="bg-gradient-to-r from-[#16b8e8] via-[#f4fbff] to-[#ff8a24] bg-clip-text text-3xl font-black leading-[1.12] text-transparent drop-shadow-[0_4px_12px_rgba(0,0,0,0.85)]">
+      Facility Management Services Company in Chennai for Safe, Clean &
+      Well-Managed Workplaces
+    </h1>
 
-        <div className="px-5 pb-8 pt-4">
-          <p className="bg-gradient-to-r from-[#a8ff1a] via-[#ff8a24] to-[#35f0ff] bg-clip-text text-sm font-bold leading-7 text-transparent drop-shadow-[0_3px_8px_rgba(0,0,0,0.95)]">
-            Vipras Facility Management Solutions helps businesses, industries,
-            institutions, apartments and commercial properties in Chennai and
-            Tamil Nadu maintain safe, clean and well-managed facilities through
-            integrated facility management services, security services,
-            housekeeping services, manpower services, Mechanical, Electrical and
-            Plumbing maintenance, fire safety support and reliable day-to-day
-            operations with Pan India service capability.
-          </p>
-        </div>
-      </div>
-
+    <p className="mt-4 bg-gradient-to-r from-[#a8ff1a] via-[#ff8a24] to-[#35f0ff] bg-clip-text text-sm font-bold leading-7 text-transparent drop-shadow-[0_3px_8px_rgba(0,0,0,0.95)]">
+      Vipras Facility Management Solutions helps businesses, industries,
+      institutions, apartments and commercial properties in Chennai and Tamil
+      Nadu maintain safe, clean and well-managed facilities through integrated
+      facility management services, security services, housekeeping services,
+      manpower services, Mechanical, Electrical and Plumbing maintenance, fire
+      safety support and reliable day-to-day operations with Pan India service
+      capability.
+    </p>
+  </div>
+</div>
       <div className="relative hidden min-h-[720px] w-full sm:block lg:min-h-[calc(100vh-76px)]">
         <video
         className="absolute inset-0 h-full w-full object-cover"
