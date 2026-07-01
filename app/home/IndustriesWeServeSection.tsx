@@ -37,11 +37,25 @@ const industries = [
 
 export default function IndustriesWeServeSection() {
   return (
-    <section className="relative overflow-hidden bg-[#f8f1e7] px-5 pb-16 pt-64 sm:px-8 sm:py-16 lg:px-12">
-     <div className="absolute inset-0 bg-[url('/industries-bg.jpg')] bg-[length:100%_auto] bg-top bg-no-repeat sm:bg-cover sm:bg-center" />
+<section
+  id="industries-we-serve"
+  aria-labelledby="industries-we-serve-heading"
+  className="relative overflow-hidden bg-[#f8f1e7] px-5 pb-16 pt-64 sm:px-8 sm:py-16 lg:px-12"
+>
+     <div
+  aria-hidden="true"
+  className="absolute inset-0 bg-[url('/industries-bg.jpg')] bg-[length:100%_auto] bg-top bg-no-repeat sm:bg-cover sm:bg-center"
+/>
 
-      <div className="absolute inset-0 bg-[#fffaf2]/10" />
-     <div className="absolute inset-0 bg-gradient-to-b from-[#1f2a24]/35 via-[#1f2a24]/55 to-[#1f2a24]/80 sm:bg-gradient-to-r sm:from-[#1f2a24]/85 sm:via-[#1f2a24]/55 sm:to-[#1f2a24]/25" />
+<div
+  aria-hidden="true"
+  className="absolute inset-0 bg-[#fffaf2]/10"
+/>
+
+<div
+  aria-hidden="true"
+  className="absolute inset-0 bg-gradient-to-b from-[#1f2a24]/35 via-[#1f2a24]/55 to-[#1f2a24]/80 sm:bg-gradient-to-r sm:from-[#1f2a24]/85 sm:via-[#1f2a24]/55 sm:to-[#1f2a24]/25"
+/>
 
       <div className="relative mx-auto max-w-7xl">
         <div className="max-w-3xl rounded-3xl bg-[#1f2a24]/55 p-5 backdrop-blur-[2px] sm:bg-transparent sm:p-0 sm:backdrop-blur-0">
@@ -49,7 +63,10 @@ export default function IndustriesWeServeSection() {
             Industries We Serve
           </p>
 
-          <h2 className="mt-3 max-w-3xl text-2xl font-black leading-tight text-white sm:text-3xl lg:text-4xl">
+         <h2
+  id="industries-we-serve-heading"
+  className="mt-3 max-w-3xl text-2xl font-black leading-tight text-white sm:text-3xl lg:text-4xl"
+>
   Trusted Facility Management Support for High-Demand Industries in Chennai and Across India
 </h2>
 
@@ -62,15 +79,19 @@ export default function IndustriesWeServeSection() {
 </p>
         </div>
 
-        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div
+  aria-label="Industries served by Vipras Facility Management Solutions"
+  className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4"
+>
           {industries.map((industry) => (
-            <Link
-              key={industry.name}
-              href={industry.href}
-              className="rounded-2xl border border-white/25 bg-white/20 px-5 py-5 text-sm font-black text-white shadow-sm backdrop-blur-md transition hover:-translate-y-1 hover:border-[#d6b06a] hover:bg-[#d6b06a] hover:text-[#1f2a24]"
-            >
-              {industry.name}
-            </Link>
+           <Link
+  key={industry.href}
+  href={industry.href}
+  aria-label={`View Vipras facility management services for ${industry.name}`} 
+  className="rounded-2xl border border-white/25 bg-white/20 px-5 py-5 text-sm font-black text-white shadow-sm backdrop-blur-md transition hover:-translate-y-1 hover:border-[#d6b06a] hover:bg-[#d6b06a] hover:text-[#1f2a24]"
+>
+  {industry.name}
+</Link>
           ))}
         </div>
       </div>

@@ -30,10 +30,30 @@ const services = [
   { name: "Integrated Facility Management", href: "/services#integrated-facility-management" },
 ];
 const socialLinks = [
-  { name: "Facebook", icon: FaFacebookF, href: "#", color: "bg-[#1877F2]" },
-  { name: "Instagram", icon: FaInstagram, href: "#", color: "bg-[#E4405F]" },
-  { name: "LinkedIn", icon: FaLinkedinIn, href: "#", color: "bg-[#0A66C2]" },
-  { name: "YouTube", icon: FaYoutube, href: "#", color: "bg-[#FF0000]" },
+  {
+  name: "Facebook",
+  icon: FaFacebookF,
+  href: "https://www.facebook.com/profile.php?id=61583160419137",
+  color: "bg-[#1877F2]",
+},
+{
+  name: "Instagram",
+  icon: FaInstagram,
+  href: "https://www.instagram.com/viprasfacilitymanagement?igsh=YWxvMDY5enViY25i",
+  color: "bg-[#E4405F]",
+},
+{
+  name: "LinkedIn",
+  icon: FaLinkedinIn,
+  href: "https://www.linkedin.com/company/109659474/",
+  color: "bg-[#0A66C2]",
+},
+{
+  name: "YouTube",
+  icon: FaYoutube,
+  href: "https://www.youtube.com/@viprasfacilitycrm8753",
+  color: "bg-[#FF0000]",
+},
   { name: "Twitter / X", icon: FaXTwitter, href: "#", color: "bg-black" },
   {
     name: "WhatsApp",
@@ -52,16 +72,30 @@ const socialLinks = [
 
 export default function FooterSection() {
   return (
-    <footer className="relative overflow-hidden bg-[#121812] px-5 py-16 text-white sm:px-8 lg:px-12">
-      <div className="absolute left-[-120px] top-10 h-80 w-80 rounded-full bg-[#b98a3c]/20 blur-3xl" />
-      <div className="absolute bottom-0 right-[-120px] h-96 w-96 rounded-full bg-[#d6b06a]/15 blur-3xl" />
+    <footer
+  id="site-footer"
+  aria-labelledby="site-footer-heading"
+  className="relative overflow-hidden bg-[#121812] px-5 py-16 text-white sm:px-8 lg:px-12"
+>
+<div
+  aria-hidden="true"
+  className="absolute left-[-120px] top-10 h-80 w-80 rounded-full bg-[#b98a3c]/20 blur-3xl"
+/>
+
+<div
+  aria-hidden="true"
+  className="absolute bottom-0 right-[-120px] h-96 w-96 rounded-full bg-[#d6b06a]/15 blur-3xl"
+/>
 
       <div className="relative mx-auto max-w-7xl">
         <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
           <div>
-            <h2 className="text-2xl font-black text-white">
-              Vipras Facility Management Solution
-            </h2>
+            <h2
+  id="site-footer-heading"
+  className="text-2xl font-black text-white"
+>
+  Vipras Facility Management Solution
+</h2>
 
             <p className="mt-5 max-w-md text-sm leading-7 text-white/75">
 
@@ -81,7 +115,7 @@ export default function FooterSection() {
   rel={social.href === "#" ? undefined : "noopener noreferrer"}
   className={`flex h-11 w-11 items-center justify-center rounded-full text-lg text-white shadow-lg shadow-black/20 transition duration-300 hover:-translate-y-1 hover:scale-110 ${social.color}`}
 >
-  <Icon />
+  <Icon aria-hidden="true" />
 </a>
                 );
               })}
@@ -93,17 +127,20 @@ export default function FooterSection() {
               Quick Links
             </h3>
 
-            <div className="mt-5 space-y-3">
-              {quickLinks.map((link) => (
-                <Link
-                  key={link.name}
-                  href={link.href}
-                  className="block text-sm font-semibold text-white/75 transition hover:translate-x-1 hover:text-[#d6b06a]"
-                >
-                  {link.name}
-                </Link>
-              ))}
-            </div>
+            <nav
+  aria-label="Footer quick links"
+  className="mt-5 space-y-3"
+>
+  {quickLinks.map((link) => (
+    <Link
+key={link.href}
+      href={link.href}
+      className="block text-sm font-semibold text-white/75 transition hover:translate-x-1 hover:text-[#d6b06a]"
+    >
+      {link.name}
+    </Link>
+  ))}
+</nav>
           </div>
 
           <div>
@@ -111,17 +148,20 @@ export default function FooterSection() {
               Services
             </h3>
 
-            <div className="mt-5 space-y-3">
-              {services.map((service) => (
-                <Link
-                  key={service.name}
-                  href={service.href}
-                  className="block text-sm font-semibold text-white/75 transition hover:translate-x-1 hover:text-[#d6b06a]"
-                >
-                  {service.name}
-                </Link>
-              ))}
-            </div>
+            <nav
+  aria-label="Footer service links"
+  className="mt-5 space-y-3"
+>
+  {services.map((service) => (
+    <Link
+     key={service.href}
+      href={service.href}
+      className="block text-sm font-semibold text-white/75 transition hover:translate-x-1 hover:text-[#d6b06a]"
+    >
+      {service.name}
+    </Link>
+  ))}
+</nav>
           </div>
 
           <div>
@@ -134,9 +174,10 @@ export default function FooterSection() {
   href="https://www.google.com/maps/search/?api=1&query=No-495%20A%2C%20Village%20High%20Rd%2C%20Sholinganallur%2C%20Chennai%2C%20Tamil%20Nadu%20600119"
   target="_blank"
   rel="noopener noreferrer"
+  aria-label="Open Vipras Facility Management Solution location in Google Maps"
   className="flex items-start gap-3 transition hover:text-[#d6b06a]"
 >
-  <MdLocationOn className="mt-1 text-xl text-[#d6b06a]" />
+  <MdLocationOn aria-hidden="true" className="mt-1 text-xl text-[#d6b06a]" />
   <p>
     No-495 A, Village High Rd, Sholinganallur, Chennai, Tamil Nadu
     600119.
@@ -146,9 +187,10 @@ export default function FooterSection() {
            href="https://wa.me/919710946484"
           target="_blank"
               rel="noopener noreferrer"
+              aria-label="Chat with Vipras Facility Management Solution on WhatsApp or call +91 97109 46484"
              className="flex items-start gap-3 transition hover:text-[#d6b06a]"
              >
-  <MdPhone className="mt-1 text-xl text-[#d6b06a]" />
+  <MdPhone aria-hidden="true" className="mt-1 text-xl text-[#d6b06a]" />
   <span>
     <span className="font-black text-white">Phone / WhatsApp:</span>
     <br />
@@ -158,9 +200,10 @@ export default function FooterSection() {
 
                   <a
   href="mailto:viprascrm@gmail.com"
+  aria-label="Email Vipras Facility Management Solution at viprascrm@gmail.com"
   className="flex items-start gap-3 transition hover:text-[#d6b06a]"
 >
-  <MdEmail className="mt-1 text-xl text-[#d6b06a]" />
+  <MdEmail aria-hidden="true" className="mt-1 text-xl text-[#d6b06a]" />
   <span>
     <span className="font-black text-white">Email:</span>
     <br />
@@ -171,6 +214,7 @@ export default function FooterSection() {
 
             <Link
               href="/contact-us"
+              aria-label="Get a free facility management quote from Vipras"
               className="mt-7 inline-flex rounded-full bg-[#d6b06a] px-6 py-3 text-sm font-black text-[#121812] shadow-xl shadow-black/20 transition hover:-translate-y-1 hover:bg-white"
             >
               Get Free Quote
@@ -184,14 +228,17 @@ export default function FooterSection() {
             All rights reserved.
           </p>
 
-          <div className="flex flex-wrap gap-4">
-            <Link href="/privacy-policy" className="transition hover:text-[#d6b06a]">
-              Privacy Policy
-            </Link>
-            <Link href="/terms-conditions" className="transition hover:text-[#d6b06a]">
-              Terms & Conditions
-            </Link>
-          </div>
+          <nav
+  aria-label="Footer legal links"
+  className="flex flex-wrap gap-4"
+>
+  <Link href="/privacy-policy" className="transition hover:text-[#d6b06a]">
+    Privacy Policy
+  </Link>
+  <Link href="/terms-conditions" className="transition hover:text-[#d6b06a]">
+    Terms & Conditions
+  </Link>
+</nav>
         </div>
       </div>
     </footer>

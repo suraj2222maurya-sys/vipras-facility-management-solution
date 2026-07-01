@@ -54,9 +54,18 @@ const services: Service[] = [
 
 export default function MainServicesSection() {
   return (
-    <section className="relative overflow-hidden bg-[#fffaf2] px-5 py-14 sm:px-8 lg:px-12">
-      <div className="absolute left-0 top-0 h-72 w-72 rounded-full bg-[#d6b06a]/20 blur-3xl" />
-      <div className="absolute bottom-0 right-0 h-80 w-80 rounded-full bg-[#eadfca]/60 blur-3xl" />
+    <section
+  aria-labelledby="main-services-heading"
+  className="relative overflow-hidden bg-[#fffaf2] px-5 py-14 sm:px-8 lg:px-12"
+>
+      <div
+  aria-hidden="true"
+  className="absolute left-0 top-0 h-72 w-72 rounded-full bg-[#d6b06a]/20 blur-3xl"
+/>
+<div
+  aria-hidden="true"
+  className="absolute bottom-0 right-0 h-80 w-80 rounded-full bg-[#eadfca]/60 blur-3xl"
+/>
 
       <div className="relative mx-auto max-w-7xl">
         <div className="mx-auto max-w-3xl text-center">
@@ -64,9 +73,12 @@ export default function MainServicesSection() {
     Core Facility Management Services
   </p>
 
-  <h2 className="mx-auto mt-3 max-w-3xl text-xl font-black leading-tight text-[#2f281f] sm:text-2xl lg:text-3xl">
-    Integrated Facility Management Services in Chennai for Safer, Cleaner and Better-Managed Workplaces
-  </h2>
+  <h2
+  id="main-services-heading"
+  className="mx-auto mt-3 max-w-3xl text-xl font-black leading-tight text-[#2f281f] sm:text-2xl lg:text-3xl"
+>
+  Integrated Facility Management Services in Chennai for Safer, Cleaner and Better-Managed Workplaces
+</h2>
 
   <p className="mt-4 text-base leading-7 text-[#6b5a45] sm:text-lg">
     Vipras supports corporate offices, industries, institutions, commercial
@@ -76,34 +88,51 @@ export default function MainServicesSection() {
   </p>
 </div>
 
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {services.map((service) => (
-            <article
-              key={service.title}
-              className="group flex h-full flex-col rounded-3xl border border-[#eadfca] bg-white/80 p-6 shadow-sm backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:border-[#d6b06a] hover:bg-white hover:shadow-2xl hover:shadow-black/10"
-            >
-              <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#f8f1e7] text-2xl shadow-sm ring-1 ring-[#eadfca] transition group-hover:bg-[#d6b06a] group-hover:ring-[#b98a3c]">
-                {service.icon}
-              </div>
+                <div
+          aria-label="Main facility management services offered by Vipras"
+          className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
+          role="list"
+        >
+          {services.map((service) => {
+            const serviceId = service.href.replace("/services#", "");
 
-              <h3 className="mt-5 text-lg font-black text-[#2f281f] sm:text-xl">
-                {service.title}
-              </h3>
-
-              <p className="mt-3 flex-1 text-sm leading-7 text-[#6b5a45]">
-                {service.description}
-              </p>
-
-              <div className="mt-5">
-                <Link
-                  href={service.href}
-                  className="inline-flex text-sm font-black text-[#b98a3c] transition hover:text-[#2f281f]"
+            return (
+              <article
+                key={service.title}
+                aria-labelledby={`${serviceId}-title`}
+                className="group flex h-full flex-col rounded-3xl border border-[#eadfca] bg-white/80 p-6 shadow-sm backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:border-[#d6b06a] hover:bg-white hover:shadow-2xl hover:shadow-black/10"
+                role="listitem"
+              >
+                <div
+                  aria-hidden="true"
+                  className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#f8f1e7] text-2xl shadow-sm ring-1 ring-[#eadfca] transition group-hover:bg-[#d6b06a] group-hover:ring-[#b98a3c]"
                 >
-                  Explore Service →
-                </Link>
-              </div>
-            </article>
-          ))}
+                  {service.icon}
+                </div>
+
+                <h3
+                  id={`${serviceId}-title`}
+                  className="mt-5 text-lg font-black text-[#2f281f] sm:text-xl"
+                >
+                  {service.title}
+                </h3>
+
+                <p className="mt-3 flex-1 text-sm leading-7 text-[#6b5a45]">
+                  {service.description}
+                </p>
+
+                <div className="mt-5">
+                  <Link
+                    aria-label={`Explore ${service.title} by Vipras Facility Management Solutions`}
+                    href={service.href}
+                    className="inline-flex text-sm font-black text-[#b98a3c] transition hover:text-[#2f281f]"
+                  >
+                    Explore Service →
+                  </Link>
+                </div>
+              </article>
+            );
+          })}
         </div>
       </div>
     </section>
