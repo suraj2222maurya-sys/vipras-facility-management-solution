@@ -69,7 +69,7 @@ export default function MainServicesSection() {
 
       <div className="relative mx-auto max-w-7xl">
         <div className="mx-auto max-w-3xl text-center">
-  <p className="text-xs font-black uppercase tracking-[0.28em] text-[#b98a3c] sm:text-sm">
+ <p className="text-xs font-black uppercase tracking-[0.28em] text-[#7a4f12] sm:text-sm">
     Core Facility Management Services
   </p>
 
@@ -125,7 +125,7 @@ export default function MainServicesSection() {
                   <Link
                     aria-label={`Explore ${service.title} by Vipras Facility Management Solutions`}
                     href={service.href}
-                    className="inline-flex text-sm font-black text-[#b98a3c] transition hover:text-[#2f281f]"
+                   className="inline-flex text-sm font-black text-[#7a4f12] transition hover:text-[#2f281f]"
                   >
                     Explore Service →
                   </Link>

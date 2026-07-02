@@ -42,7 +42,7 @@ Message: ${formData.get("message")}
     <section className="bg-[#fffaf2] px-5 py-16 sm:px-8 lg:px-12">
       <div className="mx-auto max-w-7xl">
         <div className="mb-10 max-w-3xl">
-  <p className="text-xs font-black uppercase tracking-[0.28em] text-[#b98a3c] sm:text-sm">
+  <p className="text-xs font-black uppercase tracking-[0.28em] text-[#7a4f12] sm:text-sm">
     Request a Facility Management Consultation
   </p>
 
@@ -70,7 +70,7 @@ Message: ${formData.get("message")}
             </div>
 
             <div className="mt-5">
-              <p className="text-sm font-black uppercase tracking-[0.22em] text-[#b98a3c]">
+             <p className="text-sm font-black uppercase tracking-[0.22em] text-[#7a4f12]">
                 Connect with Vipras for trusted facility management support
               </p>
 
@@ -91,7 +91,7 @@ Message: ${formData.get("message")}
           </div>
 
           <div className="rounded-3xl border border-[#eadfca] bg-white p-6 shadow-xl shadow-black/10 sm:p-8">
-            <p className="text-xs font-black uppercase tracking-[0.24em] text-[#b98a3c]">
+          <p className="text-xs font-black uppercase tracking-[0.24em] text-[#7a4f12]">
               Get a Service Proposal
             </p>
 
@@ -174,7 +174,7 @@ Message: ${formData.get("message")}
 
               <button
                 type="submit"
-                className="w-full rounded-2xl bg-[#b98a3c] px-6 py-4 text-sm font-black text-white shadow-xl shadow-black/10 transition hover:bg-[#2f281f]"
+className="w-full rounded-2xl bg-[#7a4f12] px-6 py-4 text-sm font-black text-white shadow-xl shadow-black/10 transition hover:bg-[#2f281f]"
               >
                 Send Enquiry on WhatsApp
               </button>

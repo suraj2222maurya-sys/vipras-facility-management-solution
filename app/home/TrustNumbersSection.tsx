@@ -26,7 +26,7 @@ export default function TrustNumbersSection() {
     <section className="bg-[#fffaf2] px-5 py-16 sm:px-8 lg:px-12">
       <div className="mx-auto max-w-7xl">
      <div className="mb-10 max-w-3xl">
-  <p className="text-sm font-black uppercase tracking-[0.24em] text-[#b98a3c]">
+  <p className="text-sm font-black uppercase tracking-[0.24em] text-[#7a4f12]">
     Trust Bar: Vipras Company Strength
   </p>
 
@@ -46,7 +46,7 @@ export default function TrustNumbersSection() {
               key={item.label}
               className="rounded-3xl border border-[#eadfca] bg-white/75 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl hover:shadow-black/10"
             >
-              <p className="text-4xl font-black text-[#b98a3c]">
+              <p className="text-4xl font-black text-[#7a4f12]">
                 {item.value}
               </p>
 
