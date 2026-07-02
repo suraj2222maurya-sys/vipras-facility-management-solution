@@ -35,8 +35,7 @@ category: "Facility Management Services",
   "facility management services Pan India",
   "security services in Chennai",
   "security guard services in Chennai",
-  "housekeeping services in Chennai",
-  "cleaning services in Chennai",
+  "housekeeping services in Chennai", 
   "manpower services in Chennai",
   "manpower supply services in Chennai",
   "technical maintenance services",
@@ -200,7 +199,6 @@ hasMap: "https://share.google/2CLkutu58RSNef4Gm",
     "Security Services",
     "Security Guard Services",
     "Housekeeping Services",
-    "Cleaning Services",
     "Manpower Services",
     "Technical Maintenance Services",
     "MEP Maintenance Services",
@@ -236,7 +234,7 @@ hasMap: "https://share.google/2CLkutu58RSNef4Gm",
       itemOffered: {
         "@type": "Service",
         name: "Housekeeping Services",
-        serviceType: "Housekeeping and Cleaning Services",
+       
         areaServed: "Chennai, Tamil Nadu and Pan India",
       },
     },
@@ -437,9 +435,7 @@ const webPageJsonLd = {
     mainEntity: {
     "@id": "https://www.viprasfacility.com/#services",
   },
-  hasPart: {
-  "@id": "https://www.viprasfacility.com/#faq",
-},
+  
   isPartOf: {
     "@id": "https://www.viprasfacility.com/#website",
   },
