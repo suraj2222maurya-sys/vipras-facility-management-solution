@@ -12,7 +12,7 @@ export default function HeroSection() {
     videos.forEach((video) => {
       video.muted = true;
       video.playsInline = true;
-      video.load();
+     
 
       const playPromise = video.play();
 
@@ -26,12 +26,7 @@ export default function HeroSection() {
 
   return (
     <>
-      <link
-        rel="preload"
-        href="/hero-poster.jpg.mp4"
-        as="video"
-        type="video/mp4"
-      />
+      
 
       <section
       aria-label="Vipras Facility Management Services homepage hero section"
