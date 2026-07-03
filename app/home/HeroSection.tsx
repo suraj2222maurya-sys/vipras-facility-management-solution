@@ -33,7 +33,7 @@ export default function HeroSection() {
       className="w-full overflow-hidden bg-[#0f1713]"
     >
       <div className="sm:hidden">
-       <video
+      <video
   className="block h-auto w-full object-contain"
   src="/hero-poster.jpg.mp4"
   autoPlay
@@ -43,7 +43,15 @@ export default function HeroSection() {
   preload="auto"
   aria-label="Vipras Facility Management Services team video"
   data-hero-video="true"
-/>
+>
+  <track
+    kind="captions"
+    src="/hero-video-captions.vtt"
+    srcLang="en"
+    label="English captions"
+    default
+  />
+</video>
 
         <div className="bg-[#FFFFF4] px-5 pb-8 pt-4">
           <p className="mb-4 text-xs font-black uppercase tracking-[0.28em] text-[#7A1F2B] drop-shadow-[0_2px_8px_rgba(255,255,255,0.35)]">
@@ -117,7 +125,7 @@ export default function HeroSection() {
       </div>
 
       <div className="relative hidden min-h-[720px] w-full sm:block lg:min-h-[calc(100vh-76px)]">
-        <video
+       <video
   className="absolute inset-0 h-full w-full object-cover"
   autoPlay
   muted
@@ -128,6 +136,13 @@ export default function HeroSection() {
   data-hero-video="true"
 >
   <source src="/hero-poster.jpg.mp4" type="video/mp4" />
+  <track
+    kind="captions"
+    src="/hero-video-captions.vtt"
+    srcLang="en"
+    label="English captions"
+    default
+  />
 </video>
         <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/25 to-transparent" />
 
