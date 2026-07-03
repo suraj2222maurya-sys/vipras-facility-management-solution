@@ -91,7 +91,7 @@ export default function MainServicesSection() {
                 <div
           aria-label="Main facility management services offered by Vipras"
           className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
-          role="list"
+         
         >
           {services.map((service) => {
             const serviceId = service.href.replace("/services#", "");
@@ -101,7 +101,7 @@ export default function MainServicesSection() {
                 key={service.title}
                 aria-labelledby={`${serviceId}-title`}
                 className="group flex h-full flex-col rounded-3xl border border-[#eadfca] bg-white/80 p-6 shadow-sm backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:border-[#d6b06a] hover:bg-white hover:shadow-2xl hover:shadow-black/10"
-                role="listitem"
+                
               >
                 <div
                   aria-hidden="true"
