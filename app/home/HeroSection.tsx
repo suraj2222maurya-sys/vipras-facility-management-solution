@@ -49,7 +49,6 @@ export default function HeroSection() {
     src="/hero-video-captions.vtt"
     srcLang="en"
     label="English captions"
-    default
   />
 </video>
 
@@ -63,7 +62,7 @@ export default function HeroSection() {
             Well-Managed Workplaces
           </h1>
 
-          <p className="mt-4 text-sm font-bold leading-7 text-[#2f281f] drop-shadow-[0_2px_5px_rgba(255,255,255,0.45)]">
+         <p className="mt-4 text-sm font-bold leading-7 text-[#2f281f]">
             Vipras Facility Management Solutions helps businesses, industries,
             institutions, apartments and commercial properties in Chennai and
             Tamil Nadu maintain safe, clean and well-managed facilities through
@@ -141,7 +140,6 @@ export default function HeroSection() {
     src="/hero-video-captions.vtt"
     srcLang="en"
     label="English captions"
-    default
   />
 </video>
         <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/25 to-transparent" />
