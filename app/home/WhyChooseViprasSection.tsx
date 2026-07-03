@@ -7,7 +7,7 @@ export default function WhyChooseViprasSection() {
 >
      <div
   aria-hidden="true"
-  className="absolute inset-0 bg-[url('/why-choose-bg.png.png')] bg-[length:100%_auto] bg-top bg-no-repeat sm:bg-contain sm:bg-center"
+ className="absolute inset-0 bg-[url('/why-choose-bg.webp')] bg-[length:100%_auto] bg-top bg-no-repeat sm:bg-contain sm:bg-center"
 />
 
 <div
