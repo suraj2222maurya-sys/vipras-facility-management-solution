@@ -2,10 +2,13 @@
 
 export default function AboutHeroSection() {
   return (
-    <section className="overflow-hidden bg-[#fffaf2]">
+    <section
+  aria-labelledby="about-hero-heading"
+  className="overflow-hidden bg-[#fffaf2]"
+>
       <div className="sm:hidden">
         <img
-          src="/about-hero-banner.png (2).png"
+         src="/about-vipras-facility-management-team.png"
           alt="Vipras Facility Management Solutions facility management team for corporate, industrial and institutional workplaces"
           className="h-auto w-full object-contain"
         />
@@ -15,9 +18,12 @@ export default function AboutHeroSection() {
             About Vipras
           </p>
 
-          <h1 className="mt-3 text-3xl font-black leading-tight text-[#2f281f]">
-            Trusted Facility Management Partner for Safe, Clean and Efficient
-            Workplaces
+          <h1
+  id="about-hero-heading"
+  className="mt-3 text-3xl font-black leading-tight text-[#2f281f]"
+>
+            Trusted Facility Management Company in Chennai for Safe, Clean and
+            Efficient Workplaces
           </h1>
 
           <p className="mt-4 text-sm font-semibold leading-7 text-[#6b5a45]">
@@ -26,29 +32,30 @@ export default function AboutHeroSection() {
             services built for corporate, industrial, institutional and
             government project environments across Chennai, Tamil Nadu and Pan
             India.
-          </p>
+           </p>
 
           <div className="mt-6 flex flex-col gap-3">
+           <Link
+  href="/contact-us"
+  aria-label="Get a facility management quote from Vipras Facility Management Solutions"
+  className="rounded-full bg-[#b98a3c] px-6 py-3 text-center text-sm font-black text-white shadow-lg transition hover:bg-[#9f742f]"
+>
+  Get Free Quote
+</Link>
             <Link
-              href="/contact-us"
-              className="rounded-full bg-[#b98a3c] px-6 py-3 text-center text-sm font-black text-white shadow-lg transition hover:bg-[#9f742f]"
-            >
-              Get Free Quote
-            </Link>
-
-            <Link
-              href="/services"
-              className="rounded-full border border-[#b98a3c]/35 bg-white px-6 py-3 text-center text-sm font-black text-[#2f281f] shadow-sm transition hover:bg-[#f8f1e7]"
-            >
-              Explore Services
-            </Link>
+  href="/services"
+  aria-label="Explore facility management services offered by Vipras Facility Management Solutions"
+  className="rounded-full border border-[#b98a3c]/35 bg-white px-6 py-3 text-center text-sm font-black text-[#2f281f] shadow-sm transition hover:bg-[#f8f1e7]"
+>
+  Explore Services
+</Link>
           </div>
         </div>
       </div>
 
       <div className="relative hidden overflow-hidden bg-[#11160f] sm:block">
         <img
-          src="/about-hero-banner.png (2).png"
+          src="/about-vipras-facility-management-team.png"
           alt="Vipras Facility Management Solutions facility management team for corporate, industrial and institutional workplaces"
           className="h-auto w-full object-contain"
         />
@@ -59,10 +66,10 @@ export default function AboutHeroSection() {
               About Vipras
             </p>
 
-            <h1 className="mt-3 max-w-4xl text-4xl font-black leading-tight text-white lg:text-5xl">
-              Trusted Facility Management Partner for Safe, Clean and Efficient
-              Workplaces
-            </h1>
+           <p className="mt-3 max-w-4xl text-4xl font-black leading-tight text-white lg:text-5xl">
+            Trusted Facility Management Company in Chennai for Safe, Clean and
+            Efficient Workplaces
+           </p>
 
             <p className="mt-4 max-w-3xl text-base font-medium leading-7 text-white/90 lg:text-lg">
               Vipras Facility Management Solutions supports businesses with
@@ -75,6 +82,7 @@ export default function AboutHeroSection() {
             <div className="mt-6 flex flex-wrap gap-3">
               <Link
                 href="/contact-us"
+                aria-label="Get a facility management quote from Vipras Facility Management Solutions"
                 className="rounded-full bg-[#b98a3c] px-6 py-3 text-sm font-black text-white shadow-lg shadow-black/25 transition hover:-translate-y-1 hover:bg-[#9f742f]"
               >
                 Get Free Quote
@@ -82,6 +90,7 @@ export default function AboutHeroSection() {
 
               <Link
                 href="/services"
+                aria-label="Explore facility management services offered by Vipras Facility Management Solutions"
                 className="rounded-full border border-white/40 bg-white/10 px-6 py-3 text-sm font-black text-white backdrop-blur transition hover:-translate-y-1 hover:bg-white hover:text-[#2f281f]"
               >
                 Explore Services

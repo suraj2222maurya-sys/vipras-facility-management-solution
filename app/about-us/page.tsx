@@ -8,9 +8,9 @@ import ComplianceQualitySection from "./ComplianceQualitySection";
 import AboutCTASection from "./AboutCTASection";
 
 export const metadata: Metadata = {
-  title: "About Us | Vipras Facility Management Solution",
+  title: "Vipras Facility Management Solutions | Facility Management Company in Chennai",
   description:
-    "Learn about Vipras Facility Management Solution, a trusted facility management company providing security, housekeeping, manpower, technical maintenance, fire safety and integrated facility services for corporate, industrial, institutional and government project environments.",
+  "Vipras Facility Management Solutions is a trusted facility management company supporting corporate, industrial, commercial, institutional and government project environments with security, housekeeping, manpower, technical maintenance, fire safety and integrated facility management services across Chennai, Tamil Nadu and Pan India.",
   keywords: [
     "about Vipras Facility Management Solution",
     "facility management company in Chennai",

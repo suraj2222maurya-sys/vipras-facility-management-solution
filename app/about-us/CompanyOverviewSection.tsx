@@ -19,10 +19,22 @@
 
 export default function CompanyOverviewSection() {
   return (
-    <section className="relative overflow-hidden bg-[#fffaf2] px-5 py-16 sm:px-8 lg:px-12">
-      <div className="absolute left-[-120px] top-10 h-80 w-80 rounded-full bg-[#d6b06a]/30 blur-3xl" />
-      <div className="absolute right-[-120px] bottom-10 h-96 w-96 rounded-full bg-[#eadfca]/80 blur-3xl" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,#d6b06a_1px,transparent_0)] bg-[length:30px_30px] opacity-20" />
+   <section
+  aria-labelledby="company-overview-heading"
+  className="relative overflow-hidden bg-[#fffaf2] px-5 py-16 sm:px-8 lg:px-12"
+>
+      <div
+  aria-hidden="true"
+  className="absolute left-[-120px] top-10 h-80 w-80 rounded-full bg-[#d6b06a]/30 blur-3xl"
+/>
+     <div
+  aria-hidden="true"
+  className="absolute right-[-120px] bottom-10 h-96 w-96 rounded-full bg-[#eadfca]/80 blur-3xl"
+/>
+     <div
+  aria-hidden="true"
+  className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,#d6b06a_1px,transparent_0)] bg-[length:30px_30px] opacity-20"
+/>
 
       <div className="relative mx-auto max-w-7xl">
         <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
@@ -31,13 +43,16 @@ export default function CompanyOverviewSection() {
               Company Overview
             </p>
 
-            <h2 className="mt-4 text-3xl font-black leading-tight text-[#2f281f] sm:text-4xl lg:text-5xl">
+              <h2
+  id="company-overview-heading"
+  className="mt-4 text-3xl font-black leading-tight text-[#2f281f] sm:text-4xl lg:text-5xl"
+>
               A Trusted Facility Management Company Serving Chennai, Tamil Nadu
               and Pan India
             </h2>
 
             <p className="mt-6 text-base font-medium leading-8 text-[#6f6254] sm:text-lg">
-              Established in 2007, Vipras Facility Management Solution is a
+              Established in 2007, Vipras Facility Management Solutions is a
               Chennai-based facility management company providing dependable
               security services, housekeeping services, manpower support,
               technical maintenance, fire safety manpower and integrated facility
@@ -75,7 +90,7 @@ export default function CompanyOverviewSection() {
 
         <div className="mt-10 grid gap-5 md:grid-cols-3">
           {[
-            "Professional workforce for daily business operations",
+            "Trained facility management workforce for daily business operations",
             "Facility management support for private and government projects",
             "Reliable service delivery across Tamil Nadu and Pan India",
           ].map((text) => (
