@@ -1,4 +1,5 @@
-﻿import Link from "next/link";
+﻿import Image from "next/image";
+import Link from "next/link";
 export default function AboutHeroSection() {
   return (
     <section
@@ -6,9 +7,14 @@ export default function AboutHeroSection() {
   className="overflow-hidden bg-[#fffaf2]"
 >
       <div className="sm:hidden">
-       <img
+      <Image
   src="/about-vipras-facility-management-team.png"
   alt="Vipras Facility Management Solutions facility management team for corporate, industrial and institutional workplaces"
+  width={1600}
+  height={900}
+  sizes="100vw"
+  loading="eager"
+  fetchPriority="high"
   className="h-auto w-full object-contain"
 />
 
@@ -53,14 +59,14 @@ export default function AboutHeroSection() {
       </div>
 
       <div className="relative hidden overflow-hidden bg-[#11160f] sm:block">
-       <img
+      <Image
   src="/about-vipras-facility-management-team.png"
   alt="Vipras Facility Management Solutions facility management team for corporate, industrial and institutional workplaces"
-  width="1600"
-  height="900"
+  width={1600}
+  height={900}
+  sizes="100vw"
   loading="eager"
   fetchPriority="high"
-  decoding="async"
   className="h-auto w-full object-contain"
 />
 
