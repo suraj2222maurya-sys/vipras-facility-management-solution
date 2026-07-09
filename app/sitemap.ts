@@ -4,7 +4,7 @@ const baseUrl = "https://www.viprasfacility.com";
 const homeLastModified = new Date("2026-06-30");
 const servicesLastModified = new Date("2026-06-30");
 const servicePagesLastModified = new Date("2026-06-30");
-const companyPagesLastModified = new Date("2026-06-30");
+const companyPagesLastModified = new Date("2026-07-09");
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes: MetadataRoute.Sitemap = [
     {
@@ -17,7 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   url: `${baseUrl}/about-us`,
   lastModified: companyPagesLastModified,
   changeFrequency: "monthly",
-  priority: 0.8,
+  priority: 0.9,
 },
     {
   url: `${baseUrl}/services`,

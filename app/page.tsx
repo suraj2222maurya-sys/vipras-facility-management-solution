@@ -234,7 +234,6 @@ hasMap: "https://share.google/2CLkutu58RSNef4Gm",
       itemOffered: {
         "@type": "Service",
         name: "Housekeeping Services",
-       
         areaServed: "Chennai, Tamil Nadu and Pan India",
       },
     },

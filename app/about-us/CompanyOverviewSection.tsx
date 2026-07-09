@@ -52,12 +52,18 @@ export default function CompanyOverviewSection() {
             </h2>
 
             <p className="mt-6 text-base font-medium leading-8 text-[#6f6254] sm:text-lg">
-              Established in 2007, Vipras Facility Management Solutions is a
-              Chennai-based facility management company providing dependable
-              security services, housekeeping services, manpower support,
-              technical maintenance, fire safety manpower and integrated facility
-              management solutions.
-            </p>
+  Established in 2007, <strong>Vipras Facility Management Solutions</strong>
+  is a trusted <strong>facility management company in Chennai</strong>
+  delivering <strong>Security Guard Services</strong>,
+  <strong> Housekeeping Services</strong>,
+  <strong> Manpower Supply</strong>,
+  <strong> Technical Maintenance</strong>,
+  <strong> Fire Safety Services</strong> and
+  <strong> Integrated Facility Management (IFM)</strong>
+  for corporate offices, industries, hospitals, educational institutions,
+  commercial buildings, residential communities and government projects
+  across Chennai, Tamil Nadu and Pan India.
+</p>
           </div>
 
           <div className="rounded-[2rem] border border-[#eadfca] bg-white/85 p-6 shadow-2xl shadow-black/10 backdrop-blur sm:p-8">

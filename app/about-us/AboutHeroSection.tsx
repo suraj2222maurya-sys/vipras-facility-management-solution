@@ -1,5 +1,4 @@
 ﻿import Link from "next/link";
-
 export default function AboutHeroSection() {
   return (
     <section
@@ -7,11 +6,11 @@ export default function AboutHeroSection() {
   className="overflow-hidden bg-[#fffaf2]"
 >
       <div className="sm:hidden">
-        <img
-         src="/about-vipras-facility-management-team.png"
-          alt="Vipras Facility Management Solutions facility management team for corporate, industrial and institutional workplaces"
-          className="h-auto w-full object-contain"
-        />
+       <img
+  src="/about-vipras-facility-management-team.png"
+  alt="Vipras Facility Management Solutions facility management team for corporate, industrial and institutional workplaces"
+  className="h-auto w-full object-contain"
+/>
 
         <div className="bg-[#fffaf2] px-5 pb-8 pt-5">
           <p className="text-xs font-black uppercase tracking-[0.28em] text-[#7a4f12]">
@@ -54,11 +53,16 @@ export default function AboutHeroSection() {
       </div>
 
       <div className="relative hidden overflow-hidden bg-[#11160f] sm:block">
-        <img
-          src="/about-vipras-facility-management-team.png"
-          alt="Vipras Facility Management Solutions facility management team for corporate, industrial and institutional workplaces"
-          className="h-auto w-full object-contain"
-        />
+       <img
+  src="/about-vipras-facility-management-team.png"
+  alt="Vipras Facility Management Solutions facility management team for corporate, industrial and institutional workplaces"
+  width="1600"
+  height="900"
+  loading="eager"
+  fetchPriority="high"
+  decoding="async"
+  className="h-auto w-full object-contain"
+/>
 
         <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent px-8 pb-8 pt-24 lg:px-12 lg:pb-12">
           <div className="mx-auto max-w-7xl">
@@ -66,10 +70,13 @@ export default function AboutHeroSection() {
               About Vipras
             </p>
 
-           <p className="mt-3 max-w-4xl text-4xl font-black leading-tight text-white lg:text-5xl">
-            Trusted Facility Management Company in Chennai for Safe, Clean and
-            Efficient Workplaces
-           </p>
+           <h2
+  aria-hidden="true"
+  className="mt-3 max-w-4xl text-4xl font-black leading-tight text-white lg:text-5xl"
+>
+  Trusted Facility Management Company in Chennai for Safe, Clean and
+  Efficient Workplaces
+</h2>
 
             <p className="mt-4 max-w-3xl text-base font-medium leading-7 text-white/90 lg:text-lg">
               Vipras Facility Management Solutions supports businesses with
