@@ -15,6 +15,7 @@ export default function AboutHeroSection() {
   sizes="100vw"
   loading="eager"
   fetchPriority="high"
+  decoding="sync"
   quality={60}
   className="h-auto w-full object-contain"
 />
