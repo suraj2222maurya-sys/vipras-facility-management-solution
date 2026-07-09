@@ -10,8 +10,8 @@ export default function AboutHeroSection() {
       <Image
   src="/about-vipras-facility-management-team.png"
   alt="Vipras Facility Management Solutions facility management team for corporate, industrial and institutional workplaces"
- width={1672}
-height={941}
+  width={1672}
+  height={941}
   sizes="100vw"
   loading="eager"
   fetchPriority="high"
@@ -66,8 +66,9 @@ height={941}
   width={1672}
 height={941}
   sizes="100vw"
-  loading="lazy"
-quality={70}
+  loading="eager"
+fetchPriority="high"
+quality={60}
   className="h-auto w-full object-contain"
 />
 

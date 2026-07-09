@@ -1,5 +1,5 @@
 ﻿import Link from "next/link";
-
+import Image from "next/image";
 const serviceBadges = [
   "Security",
   "Housekeeping",
@@ -13,11 +13,16 @@ export default function ServicesHeroSection() {
   return (
     <section className="relative overflow-hidden bg-[#fffaf2]">
       <div className="relative">
-        <img
-          src="/services-hero-banner.png.png"
-          alt="Vipras Facility Management Solution complete facility management services team"
-          className="h-auto w-full object-contain"
-        />
+       <Image
+  src="/services-hero-banner.png.png"
+  alt="Vipras Facility Management Solution complete facility management services team"
+  width={1672}
+  height={941}
+  priority
+  sizes="100vw"
+  quality={75}
+  className="h-auto w-full object-contain"
+/>
 
         <div className="pointer-events-none absolute inset-0 hidden bg-gradient-to-r from-[#fffaf2]/95 via-[#fffaf2]/70 to-transparent lg:block" />
 
