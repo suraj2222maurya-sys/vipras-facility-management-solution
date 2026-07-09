@@ -29,7 +29,8 @@ export default function Navbar() {
     alt="Vipras Facility Management Solutions"
     fill
     priority
-    sizes="(max-width: 640px) 120px, (max-width: 768px) 150px, (max-width: 1024px) 170px, (max-width: 1280px) 190px, 210px"
+    quality={60}
+    sizes="(max-width: 640px) 155px, (max-width: 768px) 185px, (max-width: 1024px) 210px, (max-width: 1280px) 235px, 260px"
     className="object-contain"
   />
 </div>

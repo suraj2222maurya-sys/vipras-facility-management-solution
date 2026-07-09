@@ -10,11 +10,12 @@ export default function AboutHeroSection() {
       <Image
   src="/about-vipras-facility-management-team.png"
   alt="Vipras Facility Management Solutions facility management team for corporate, industrial and institutional workplaces"
-  width={1600}
-  height={900}
+ width={1672}
+height={941}
   sizes="100vw"
   loading="eager"
   fetchPriority="high"
+  quality={70}
   className="h-auto w-full object-contain"
 />
 
@@ -40,10 +41,10 @@ export default function AboutHeroSection() {
            </p>
 
           <div className="mt-6 flex flex-col gap-3">
-           <Link
+<Link
   href="/contact-us"
   aria-label="Get a facility management quote from Vipras Facility Management Solutions"
-  className="rounded-full bg-[#b98a3c] px-6 py-3 text-center text-sm font-black text-white shadow-lg transition hover:bg-[#9f742f]"
+  className="rounded-full bg-[#b98a3c] px-6 py-3 text-center text-sm font-black text-[#2f281f] shadow-lg transition hover:bg-[#9f742f]"
 >
   Get Free Quote
 </Link>
@@ -62,11 +63,12 @@ export default function AboutHeroSection() {
       <Image
   src="/about-vipras-facility-management-team.png"
   alt="Vipras Facility Management Solutions facility management team for corporate, industrial and institutional workplaces"
-  width={1600}
-  height={900}
+  width={1672}
+height={941}
   sizes="100vw"
   loading="eager"
   fetchPriority="high"
+  quality={70}
   className="h-auto w-full object-contain"
 />
 
@@ -96,7 +98,7 @@ export default function AboutHeroSection() {
               <Link
                 href="/contact-us"
                 aria-label="Get a facility management quote from Vipras Facility Management Solutions"
-                className="rounded-full bg-[#b98a3c] px-6 py-3 text-sm font-black text-white shadow-lg shadow-black/25 transition hover:-translate-y-1 hover:bg-[#9f742f]"
+                className="rounded-full bg-[#b98a3c] px-6 py-3 text-sm font-black text-[#2f281f] shadow-lg shadow-black/25 transition hover:-translate-y-1 hover:bg-[#9f742f]"
               >
                 Get Free Quote
               </Link>
