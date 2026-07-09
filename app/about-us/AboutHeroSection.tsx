@@ -15,7 +15,7 @@ height={941}
   sizes="100vw"
   loading="eager"
   fetchPriority="high"
-  quality={70}
+  quality={60}
   className="h-auto w-full object-contain"
 />
 
@@ -66,9 +66,8 @@ height={941}
   width={1672}
 height={941}
   sizes="100vw"
-  loading="eager"
-  fetchPriority="high"
-  quality={70}
+  loading="lazy"
+quality={70}
   className="h-auto w-full object-contain"
 />
 
