@@ -14,7 +14,7 @@ export default function HeroSection() {
       className="w-full overflow-hidden bg-[#0f1713]"
     >
     
-     <div className="relative aspect-[16/9] w-full overflow-hidden bg-[#0f1713]">
+<div className="relative aspect-[16/9] w-full overflow-hidden bg-[#0f1713] sm:hidden">
  <div className="relative aspect-video w-full overflow-hidden bg-[#0f1713]">
   <video
     className="absolute inset-0 h-full w-full object-cover"
