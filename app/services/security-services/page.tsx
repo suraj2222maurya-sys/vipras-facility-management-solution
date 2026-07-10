@@ -64,14 +64,14 @@ export default function SecurityServicesPage() {
     className="h-auto w-full object-contain"
   />
 
-  <div className="absolute left-5 top-1/2 max-w-xl -translate-y-1/2 rounded-3xl bg-black/45 p-5 text-white backdrop-blur-sm sm:left-8 sm:p-7 lg:left-12 lg:p-8">
+  <div className="absolute left-5 top-1/2 hidden max-w-xl -translate-y-1/2 rounded-3xl bg-black/45 p-5 text-white backdrop-blur-sm lg:left-12 lg:block lg:p-8">
     <p className="text-xs font-black uppercase tracking-[0.3em] text-[#d6b06a] sm:text-sm">
       Vipras Security Services
     </p>
 
-    <h1 className="mt-3 text-2xl font-black leading-tight sm:text-4xl lg:text-5xl">
-      Professional Security Services for Your Workplace
-    </h1>
+    <h2 className="mt-3 text-2xl font-black leading-tight sm:text-4xl lg:text-5xl">
+  Professional Security Services for Your Workplace
+</h2>
 
     <p className="mt-4 hidden max-w-lg text-sm font-medium leading-7 text-white/85 sm:block">
       Trained security manpower for corporate offices, factories, apartments,
@@ -86,6 +86,44 @@ export default function SecurityServicesPage() {
       Get Security Quote
     </Link>
   </div>
+  <div className="bg-gradient-to-b from-[#fff8e8] via-[#fffaf2] to-[#f4ead8] px-5 pb-8 pt-5 lg:hidden">
+  <div className="rounded-[1.75rem] border border-[#ead8b8] bg-white p-6 shadow-xl shadow-[#6b4f2a]/10">
+    <p className="text-xs font-black uppercase tracking-[0.28em] text-[#b98a3c]">
+      Vipras Security Services
+    </p>
+
+    <h1 className="mt-3 text-3xl font-black leading-tight text-[#2f281f]">
+      Security Services in Chennai for Safe and Protected Workplaces
+    </h1>
+
+    <p className="mt-4 text-sm font-medium leading-7 text-[#6f6254]">
+      Vipras provides trained security guards and professional security
+      manpower for corporate offices, factories, IT parks, hospitals,
+      apartments, warehouses and commercial properties across Chennai,
+      Tamil Nadu, Bengaluru, Andhra Pradesh and Pan India.
+    </p>
+
+    <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+      <Link
+        href="/contact-us"
+        aria-label="Request a security services quote from Vipras"
+        className="rounded-full bg-[#b98a3c] px-6 py-3 text-center text-sm font-black text-white shadow-lg shadow-[#b98a3c]/25"
+      >
+        Get Security Quote
+      </Link>
+
+      <a
+        href="https://wa.me/919710946484?text=Hello%20Vipras%20Facility%20Management%20Solution%2C%20I%20would%20like%20to%20know%20more%20about%20your%20security%20services."
+        aria-label="Chat with Vipras about security services on WhatsApp"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="rounded-full border border-[#d6b06a] bg-[#fffaf2] px-6 py-3 text-center text-sm font-black text-[#4a3720]"
+      >
+        WhatsApp Now
+      </a>
+    </div>
+  </div>
+</div>
 </section>
 
       <section className="relative px-5 pb-14 pt-8 sm:px-8 lg:px-12">

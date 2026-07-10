@@ -55,7 +55,10 @@ const services = [
 
 export default function AllServicesSection() {
   return (
-    <section className="relative overflow-hidden bg-[#fffaf2] px-5 py-14 sm:px-8 lg:px-12">
+    <section
+  aria-labelledby="all-services-heading"
+  className="relative overflow-hidden bg-[#fffaf2] px-5 py-14 sm:px-8 lg:px-12"
+>
       <div className="absolute left-[-120px] top-10 h-80 w-80 rounded-full bg-[#d6b06a]/25 blur-3xl" />
       <div className="absolute right-[-140px] bottom-10 h-96 w-96 rounded-full bg-[#eadfca]/80 blur-3xl" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,#d6b06a_1px,transparent_0)] bg-[length:30px_30px] opacity-15" />
@@ -66,26 +69,36 @@ export default function AllServicesSection() {
             All Services
           </p>
 
-          <h2 className="mt-4 text-3xl font-black leading-tight text-[#2f281f] sm:text-4xl lg:text-5xl">
-            Complete Facility Management Services Under One Trusted Brand
-          </h2>
+          <h2
+  id="all-services-heading"
+  className="mt-4 text-3xl font-black leading-tight text-[#2f281f] sm:text-4xl lg:text-5xl"
+>
+  Complete Facility Management Services in Chennai and Across India
+</h2>
 
-          <p className="mt-5 text-base font-medium leading-8 text-[#6f6254] sm:text-lg">
-            Explore Vipras Facility Management Solution services designed for
-            safe, clean, efficient and professionally managed business
-            environments across Chennai, Tamil Nadu and Pan India.
-          </p>
+         <p className="mt-5 text-base font-medium leading-8 text-[#6f6254] sm:text-lg">
+  Explore professional security, housekeeping, manpower supply,
+  technical maintenance, fire safety and integrated facility management
+  services for businesses, industries, hospitals, hotels, apartments and
+  commercial properties across Chennai, Tamil Nadu, Bengaluru, Andhra
+  Pradesh and Pan India.
+</p>
         </div>
 
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+<div
+  aria-label="Vipras facility management service categories"
+  className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
+>
           {services.map((service, index) => {
             const Icon = service.icon;
 
             return (
-              <article
-                key={service.title}
-                className="group relative flex h-full flex-col overflow-hidden rounded-[1.7rem] border border-[#eadfca] bg-white/90 p-6 shadow-xl shadow-black/5 backdrop-blur transition duration-500 hover:-translate-y-2 hover:border-[#d6b06a] hover:shadow-2xl hover:shadow-[#d6b06a]/15"
-              >
+             <article
+  key={service.title}
+  aria-labelledby={`service-card-${index + 1}-heading`}
+  className="group relative flex h-full flex-col overflow-hidden rounded-[1.7rem] border border-[#eadfca] bg-white/90 p-6 shadow-xl shadow-black/5 backdrop-blur transition duration-500 hover:-translate-y-2 hover:border-[#d6b06a] hover:shadow-2xl hover:shadow-[#d6b06a]/15"
+>
+              
                 <div className="absolute right-[-35px] top-[-35px] h-28 w-28 rounded-full bg-[#d6b06a]/15 transition duration-500 group-hover:scale-125" />
 
                 <div className="relative flex items-center justify-between gap-4">
@@ -98,9 +111,12 @@ export default function AllServicesSection() {
                   </span>
                 </div>
 
-                <h3 className="relative mt-5 text-xl font-black leading-tight text-[#2f281f]">
-                  {service.title}
-                </h3>
+                <h3
+  id={`service-card-${index + 1}-heading`}
+  className="relative mt-5 text-xl font-black leading-tight text-[#2f281f]"
+>
+  {service.title}
+</h3>
 
                 <p className="relative mt-4 flex-1 text-sm font-medium leading-7 text-[#6f6254]">
                   {service.description}
@@ -108,9 +124,10 @@ export default function AllServicesSection() {
 
                 <Link
                   href={service.href}
+                  aria-label={`Learn more about ${service.title} from Vipras`}
                   className="relative mt-6 inline-flex w-fit items-center rounded-full bg-[#b98a3c] px-5 py-3 text-sm font-black text-white shadow-lg shadow-[#b98a3c]/25 transition duration-300 hover:-translate-y-1 hover:bg-[#9f742f]"
                 >
-                  View Service
+                 View {service.title}
                   <span className="ml-2 transition duration-300 group-hover:translate-x-1">
                     →
                   </span>
