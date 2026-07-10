@@ -1,28 +1,9 @@
-"use client";
 
-import { useEffect } from "react";
 import Link from "next/link";
 
+
 export default function HeroSection() {
-  useEffect(() => {
-    const videos = document.querySelectorAll<HTMLVideoElement>(
-      "video[data-hero-video='true']"
-    );
-
-    videos.forEach((video) => {
-      video.muted = true;
-      video.playsInline = true;
-     
-
-      const playPromise = video.play();
-
-      if (playPromise !== undefined) {
-        playPromise.catch(() => {
-          // Browser may delay autoplay until video is ready.
-        });
-      }
-    });
-  }, []);
+  
 
   return (
     <>
@@ -32,25 +13,32 @@ export default function HeroSection() {
       aria-label="Vipras Facility Management Services homepage hero section"
       className="w-full overflow-hidden bg-[#0f1713]"
     >
-      <div className="sm:hidden">
-      <video
-  className="block h-auto w-full object-contain"
+    
+     <div className="relative aspect-[16/9] w-full overflow-hidden bg-[#0f1713]">
+ <div className="relative aspect-video w-full overflow-hidden bg-[#0f1713]">
+  <video
+    className="absolute inset-0 h-full w-full object-cover"
+    autoPlay
+    muted
+    loop
+    playsInline
+    preload="metadata"
+    aria-label="Vipras Facility Management Services team video"
+    data-hero-video="true"
+  >
+    <source
   src="/hero-poster.jpg.mp4"
-  autoPlay
-  muted
-  loop
-  playsInline
-  preload="auto"
-  aria-label="Vipras Facility Management Services team video"
-  data-hero-video="true"
->
-  <track
-    kind="captions"
-    src="/hero-video-captions.vtt"
-    srcLang="en"
-    label="English captions"
-  />
-</video>
+  type="video/mp4"
+  media="(max-width: 639px)"
+/>
+    <track
+      kind="captions"
+      src="/hero-video-captions.vtt"
+      srcLang="en"
+      label="English captions"
+    />
+  </video>
+</div>
 
         <div className="bg-[#FFFFF4] px-5 pb-8 pt-4">
           <p className="mb-4 text-xs font-black uppercase tracking-[0.28em] text-[#7A1F2B] drop-shadow-[0_2px_8px_rgba(255,255,255,0.35)]">
@@ -134,7 +122,11 @@ export default function HeroSection() {
   aria-label="Vipras Facility Management Services team video"
   data-hero-video="true"
 >
-  <source src="/hero-poster.jpg.mp4" type="video/mp4" />
+  <source
+  src="/hero-poster.jpg.mp4"
+  type="video/mp4"
+  media="(min-width: 640px)"
+/>
   <track
     kind="captions"
     src="/hero-video-captions.vtt"

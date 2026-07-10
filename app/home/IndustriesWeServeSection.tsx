@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import Image from "next/image";
 const industries = [
   {
     name: "Manufacturing Plants",
@@ -42,10 +42,16 @@ export default function IndustriesWeServeSection() {
   aria-labelledby="industries-we-serve-heading"
   className="relative overflow-hidden bg-[#f8f1e7] px-5 pb-16 pt-64 sm:px-8 sm:py-16 lg:px-12"
 >
-     <div
-  aria-hidden="true"
-  className="absolute inset-0 bg-[url('/industries-bg.jpg')] bg-[length:100%_auto] bg-top bg-no-repeat sm:bg-cover sm:bg-center"
+    <Image
+  src="/industries-bg.jpg"
+  alt=""
+  fill
+  sizes="100vw"
+  className="object-cover object-center"
+  quality={60}
+  loading="lazy"
 />
+
 
 <div
   aria-hidden="true"
