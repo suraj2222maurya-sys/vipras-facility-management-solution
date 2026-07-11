@@ -136,8 +136,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
+<html
   lang="en-IN"
+  suppressHydrationWarning
   data-scroll-behavior="smooth"
   className={`${geistSans.variable} ${geistMono.variable} scroll-smooth antialiased`}
 >
