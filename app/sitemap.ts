@@ -4,6 +4,7 @@ const baseUrl = "https://www.viprasfacility.com";
 const homeLastModified = new Date("2026-06-30");
 const servicesLastModified = new Date("2026-06-30");
 const servicePagesLastModified = new Date("2026-06-30");
+const securityServicesLastModified = new Date("2026-07-13");
 const companyPagesLastModified = new Date("2026-07-09");
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes: MetadataRoute.Sitemap = [
@@ -26,11 +27,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   priority: 0.95,
 },
     {
-      url: `${baseUrl}/services/security-services`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
+  url: `${baseUrl}/services/security-services`,
+  lastModified: securityServicesLastModified,
+  changeFrequency: "monthly",
+  priority: 0.9,
+},
     {
   url: `${baseUrl}/services/housekeeping-soft-services`,
   lastModified: servicePagesLastModified,

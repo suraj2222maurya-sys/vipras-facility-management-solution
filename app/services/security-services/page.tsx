@@ -1,6 +1,5 @@
 ﻿import type { Metadata } from "next";
 import Link from "next/link";
-
 export const metadata: Metadata = {
   title: {
     absolute:
@@ -8,75 +7,21 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Trained security guards for apartments, schools, banks, industries, hospitals, hotels and government sites across Chennai, Tamil Nadu, Bengaluru, Andhra Pradesh and Pan India.",
+    "Professional security guard services for apartments, offices, industries, hospitals, hotels, schools, banks and commercial properties across Chennai and Tamil Nadu.",
+authors: [
+  {
+    name: "Vipras Facility Management Solutions Private Limited",
+    url: "https://www.viprasfacility.com/",
+  },
+],
 
+creator: "Vipras Facility Management Solutions Private Limited",
+
+publisher: "Vipras Facility Management Solutions Private Limited",
+
+category: "Professional Security Guard Services",
   alternates: {
-    canonical:
-      "https://www.viprasfacility.com/services/security-services",
-  },
-
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      noimageindex: false,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  },
-
- openGraph: {
-  title:
-    "Security Guard Services in Chennai & Tamil Nadu | Vipras",
-
-  description:
-    "Professional security guard services for residential, corporate, industrial, educational, healthcare, hospitality, banking and government sectors.",
-
-  url:
-    "https://www.viprasfacility.com/services/security-services",
-
-  siteName: "Vipras Facility Management Solutions",
-  locale: "en_IN",
-  type: "website",
-
-  images: [
-    {
-      url:
-        "https://www.viprasfacility.com/security-services-banner.png%20(2).png",
-      alt:
-        "Vipras professional security guard services in Chennai and Tamil Nadu",
-    },
-  ],
-},
-
-twitter: {
-  card: "summary_large_image",
-
-  title:
-    "Security Guard Services in Chennai & Tamil Nadu | Vipras",
-
-  description:
-    "Professional security guards for apartments, offices, industries, hospitals, hotels, schools, banks and government sites.",
-
-  images: [
-    "https://www.viprasfacility.com/security-services-banner.png%20(2).png",
-  ],
-},
-  },
-};
-export const metadata: Metadata = {
-  title: {
-    absolute:
-      "Security Guard Services in Chennai & Tamil Nadu | Vipras",
-  },
-
-  description:
-    "Trained security guards for apartments, schools, banks, industries, hospitals, hotels and government sites across Chennai, Tamil Nadu, Bengaluru, Andhra Pradesh and Pan India.",
-
-  alternates: {
+    
     canonical:
       "https://www.viprasfacility.com/services/security-services",
   },
@@ -99,23 +44,25 @@ export const metadata: Metadata = {
       "Security Guard Services in Chennai & Tamil Nadu | Vipras",
 
     description:
-      "Professional security guard services for residential, corporate, industrial, educational, healthcare, hospitality, banking and government sectors.",
+      "Trained and supervised security guards for residential, corporate, industrial, healthcare, hospitality, education and commercial properties.",
 
     url:
       "https://www.viprasfacility.com/services/security-services",
 
-    siteName: "Vipras Facility Management Solution",
+    siteName: "Vipras Facility Management Solutions Private Limited",
     locale: "en_IN",
     type: "website",
 
     images: [
-      {
-        url:
-          "https://www.viprasfacility.com/security-services-banner.png%20(2).png",
-        alt:
-          "Vipras professional security guard services in Chennai and Tamil Nadu",
-      },
-    ],
+  {
+    url:
+      "https://www.viprasfacility.com/security-guard-services-chennai-og.png",
+    width: 1731,
+    height: 909,
+    alt:
+      "Vipras professional security guard services in Chennai and Tamil Nadu",
+  },
+],
   },
 
   twitter: {
@@ -125,15 +72,14 @@ export const metadata: Metadata = {
       "Security Guard Services in Chennai & Tamil Nadu | Vipras",
 
     description:
-      "Professional security guards for apartments, offices, industries, hospitals, hotels, schools, banks and government sites.",
+      "Professional security guards for apartments, offices, industries, hospitals, hotels, schools and commercial properties.",
 
     images: [
-      "https://www.viprasfacility.com/security-services-banner.png%20(2).png",
-    ],
+  "https://www.viprasfacility.com/security-guard-services-chennai-og.png",
+],
   },
 };
 
-const serviceTypes = [
 const serviceTypes = [
   "Corporate Office Security Services",
   "Industrial & Manufacturing Security",
@@ -198,11 +144,53 @@ const securityServiceSchema = {
     {
       "@type": ["LocalBusiness", "Organization"],
       "@id": "https://www.viprasfacility.com/#organization",
-      name: "Vipras Facility Management Solution",
+       name: "Vipras Facility Management Solution",
+legalName: "Vipras Facility Management Solutions Private Limited",
+alternateName: "Vipras",
       url: "https://www.viprasfacility.com/",
+     image:
+  "https://www.viprasfacility.com/security-guard-services-chennai-og.png",
+
+logo: {
+  "@type": "ImageObject",
+  "@id": "https://www.viprasfacility.com/#logo",
+  url:
+    "https://www.viprasfacility.com/vipras-logo%20(2).png",
+  contentUrl:
+    "https://www.viprasfacility.com/vipras-logo%20(2).png",
+  caption:
+    "Vipras Facility Management Solutions Private Limited",
+},
+
+description:
+  "Vipras Facility Management Solution provides trained and supervised security guard services for apartments, offices, factories, hospitals, hotels, schools, warehouses and commercial properties across Chennai and Tamil Nadu.",
       telephone: "+91 97109 46484",
       email: "viprascrm@gmail.com",
-      address: {
+      contactPoint: {
+  "@type": "ContactPoint",
+  telephone: "+91 97109 46484",
+  contactType: "customer service",
+  email: "viprascrm@gmail.com",
+  areaServed: "IN",
+  availableLanguage: ["English", "Tamil", "Hindi"],
+},
+
+openingHoursSpecification: {
+  "@type": "OpeningHoursSpecification",
+  dayOfWeek: [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+  ],
+  opens: "00:00",
+  closes: "23:59",
+},
+
+address: {
         "@type": "PostalAddress",
         streetAddress: "No-495 A, Village High Road, Sholinganallur",
         addressLocality: "Chennai",
@@ -210,6 +198,11 @@ const securityServiceSchema = {
         postalCode: "600119",
         addressCountry: "IN",
       },
+      geo: {
+  "@type": "GeoCoordinates",
+  latitude: 12.9021541,
+  longitude: 80.2326451,
+},
       areaServed: [
         {
           "@type": "City",
@@ -232,13 +225,31 @@ const securityServiceSchema = {
           name: "India",
         },
       ],
-      hasMap: "https://maps.app.goo.gl/xcKVEwihDR2bqPkU6",
+      hasMap: "https://maps.app.goo.gl/tqgwt5ePtMRTEAxJ8",
       sameAs: [
         "https://www.youtube.com/@viprasfacilitycrm8753",
         "https://www.linkedin.com/company/109659474/",
         "https://www.instagram.com/viprasfacilitymanagement/",
         "https://www.facebook.com/profile.php?id=61583160419137",
       ],
+      hasOfferCatalog: {
+  "@type": "OfferCatalog",
+  name: "Professional Security Guard Services",
+  itemListElement: serviceTypes.map((serviceName) => ({
+    "@type": "Offer",
+    itemOffered: {
+      "@type": "Service",
+      name: serviceName,
+      provider: {
+        "@id": "https://www.viprasfacility.com/#organization",
+      },
+      areaServed: {
+        "@type": "State",
+        name: "Tamil Nadu",
+      },
+    },
+  })),
+},
     },
     {
       "@type": "Service",
@@ -247,14 +258,59 @@ const securityServiceSchema = {
       name: "Security Guard Services in Chennai and Tamil Nadu",
       serviceType:
         "Professional security guard and security manpower services",
-      url:
-        "https://www.viprasfacility.com/services/security-services",
+    url:
+  "https://www.viprasfacility.com/services/security-services",
+
+image: {
+  "@id":
+    "https://www.viprasfacility.com/services/security-services#primaryimage",
+},
+
+mainEntityOfPage: {
+  "@id":
+    "https://www.viprasfacility.com/services/security-services#webpage",
+},
       description:
         "Professional security guards and trained security manpower for corporate offices, industries, factories, banks, schools, colleges, hospitals, hotels, apartments, residential communities, commercial buildings, warehouses, VIP properties and government sector projects.",
-      provider: {
-        "@id": "https://www.viprasfacility.com/#organization",
-      },
-      areaServed: [
+         provider: {
+  "@id": "https://www.viprasfacility.com/#organization",
+},
+
+availableChannel: [
+  {
+    "@type": "ServiceChannel",
+    name: "Security Guard Services Phone Enquiry",
+    serviceUrl: "https://www.viprasfacility.com/contact-us",
+    servicePhone: {
+      "@type": "ContactPoint",
+      telephone: "+91 97109 46484",
+      contactType: "sales",
+      areaServed: "IN",
+      availableLanguage: ["English", "Tamil", "Hindi"],
+    },
+  },
+  {
+    "@type": "ServiceChannel",
+    name: "WhatsApp",
+    serviceUrl:
+      "https://wa.me/919710946484?text=Hello%20Vipras%2C%20I%20need%20security%20guard%20services.",
+  },
+],
+hoursAvailable: {
+  "@type": "OpeningHoursSpecification",
+  dayOfWeek: [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+  ],
+  opens: "00:00",
+  closes: "23:59",
+},
+areaServed: [
         {
           "@type": "City",
           name: "Chennai",
@@ -281,6 +337,113 @@ const securityServiceSchema = {
         audienceType:
           "Corporate offices, factories, industries, banks, schools, colleges, hospitals, hotels, apartments, residential communities, commercial buildings, warehouses, VIP properties and government sectors",
       },
+      
+     },
+     {
+  "@type": "WebSite",
+  "@id": "https://www.viprasfacility.com/#website",
+  url: "https://www.viprasfacility.com/",
+  name: "Vipras Facility Management Solution",
+  alternateName: "Vipras",
+  inLanguage: "en-IN",
+  publisher: {
+    "@id": "https://www.viprasfacility.com/#organization",
+  },
+},
+    {
+     
+      "@type": "WebPage",
+      "@id":
+        "https://www.viprasfacility.com/services/security-services#webpage",
+      url:
+        "https://www.viprasfacility.com/services/security-services",
+      name:
+        "Security Guard Services in Chennai and Tamil Nadu",
+     description:
+  "Professional security guard services for apartments, offices, industries, hospitals, hotels, schools, banks and commercial properties across Chennai and Tamil Nadu.",
+
+keywords: [
+  "security guard services in Chennai",
+  "security agency in Chennai",
+  "private security company in Chennai",
+  "security guard company in Chennai",
+  "professional security services Chennai",
+  "security services in Tamil Nadu",
+  "manned guarding services Chennai",
+  "watchman services in Chennai",
+  "security manpower services Chennai",
+  "corporate security services in Chennai",
+  "office security services Chennai",
+  "industrial security guard services Tamil Nadu",
+  "security services in OMR Chennai",
+  "security guards in Sholinganallur",
+  "commercial building security Chennai",
+  "apartment security services Chennai",
+  "gated community security guards Chennai",
+  "residential security services Chennai",
+  "hospital security guard services Chennai",
+  "hotel security services Chennai",
+  "bank security guard services Chennai",
+  "factory security guard services Tamil Nadu",
+  "warehouse security services Chennai",
+  "construction site security guards Chennai",
+  "school security guard services Chennai",
+  "retail security guard services Chennai",
+  "shopping mall security guards Chennai",
+  "security guard quotation Chennai",
+  "security agency contact number Chennai",
+  "security services contract agency Chennai",
+  "24/7 security guard services Chennai",
+  "pan India security services provider",
+],
+
+inLanguage: "en-IN",
+         
+       
+isPartOf: {
+  "@id": "https://www.viprasfacility.com/#website",
+},
+about: {
+  "@id": "https://www.viprasfacility.com/#organization",
+},
+
+author: {
+  "@id": "https://www.viprasfacility.com/#organization",
+},
+
+publisher: {
+  "@id": "https://www.viprasfacility.com/#organization",
+},
+
+mainEntity: {
+        "@id":
+          "https://www.viprasfacility.com/services/security-services#service",
+      },
+      breadcrumb: {
+  "@id":
+    "https://www.viprasfacility.com/services/security-services#breadcrumb",
+},
+
+hasPart: {
+  "@id":
+    "https://www.viprasfacility.com/services/security-services#faq",
+},
+
+primaryImageOfPage: {
+  "@type": "ImageObject",
+  "@id":
+    "https://www.viprasfacility.com/services/security-services#primaryimage",
+  url:
+    "https://www.viprasfacility.com/security-guard-services-chennai-og.png",
+  contentUrl:
+    "https://www.viprasfacility.com/security-guard-services-chennai-og.png",
+  encodingFormat: "image/png",
+  caption:
+    "Vipras professional security guard services in Chennai and Tamil Nadu",
+  representativeOfPage: true,
+  width: 1731,
+  height: 909,
+},
     },
     {
       "@type": "BreadcrumbList",
@@ -308,6 +471,31 @@ const securityServiceSchema = {
         },
       ],
     },
+{
+  "@type": "FAQPage",
+  "@id":
+    "https://www.viprasfacility.com/services/security-services#faq",
+  url:
+    "https://www.viprasfacility.com/services/security-services#security-faq-heading",
+  name: "Security Guard Services Frequently Asked Questions",
+  inLanguage: "en-IN",
+  isPartOf: {
+    "@id":
+      "https://www.viprasfacility.com/services/security-services#webpage",
+  },
+  about: {
+    "@id":
+      "https://www.viprasfacility.com/services/security-services#service",
+  },
+  mainEntity: securityFaqs.map((faq) => ({
+        "@type": "Question",
+        name: faq.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: faq.answer,
+        },
+      })),
+    },
   ],
 };
 export default function SecurityServicesPage() {
@@ -323,12 +511,14 @@ export default function SecurityServicesPage() {
   }}
 />
       <section className="relative">
-  <img
-    src="/security-services-banner.png (2).png"
-    alt="Vipras Facility Management Solution professional security services team"
-    className="h-auto w-full object-contain"
-  />
-
+<img
+  src="/security-services-banner.png (2).png"
+  alt="Professional security guard services in Chennai and Tamil Nadu by Vipras Facility Management Solution"
+  loading="eager"
+  fetchPriority="high"
+  decoding="async"
+  className="h-auto w-full object-contain"
+/>
   <div className="absolute left-5 top-1/2 hidden max-w-xl -translate-y-1/2 rounded-3xl bg-black/45 p-5 text-white backdrop-blur-sm lg:left-12 lg:block lg:p-8">
     <p className="text-xs font-black uppercase tracking-[0.3em] text-[#d6b06a] sm:text-sm">
       Vipras Security Services
@@ -396,14 +586,49 @@ export default function SecurityServicesPage() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,#d6b06a_1px,transparent_0)] bg-[length:30px_30px] opacity-15" />
 
         <div className="relative mx-auto max-w-7xl">
+          <nav
+  aria-label="Breadcrumb"
+  className="mb-5 text-sm font-semibold text-[#6f6254]"
+>
+  <ol className="flex flex-wrap items-center gap-2">
+    <li>
+      <Link
+        href="/"
+        className="transition hover:text-[#b98a3c]"
+      >
+        Home
+      </Link>
+    </li>
+
+    <li aria-hidden="true">/</li>
+
+    <li>
+      <Link
+        href="/services"
+        className="transition hover:text-[#b98a3c]"
+      >
+        Services
+      </Link>
+    </li>
+
+    <li aria-hidden="true">/</li>
+
+    <li
+      aria-current="page"
+      className="text-[#2f281f]"
+    >
+      Security Guard Services
+    </li>
+  </ol>
+</nav>
           <div className="rounded-[2rem] border border-[#eadfca] bg-white/90 p-6 shadow-2xl shadow-black/10 backdrop-blur sm:p-8 lg:p-10">
             <p className="text-xs font-black uppercase tracking-[0.35em] text-[#b98a3c] sm:text-sm">
               Security Services
             </p>
 
                 <h1 className="mt-4 max-w-5xl text-3xl font-black leading-tight text-[#2f281f] sm:text-4xl lg:text-5xl">
-  Professional Security Guard Services in Chennai, Tamil Nadu and Pan India
-</h1>
+                Security Guard Services in Chennai and Tamil Nadu
+               </h1>
 
             <p className="mt-5 max-w-4xl text-base font-medium leading-8 text-[#6f6254] sm:text-lg">
               Vipras Facility Management Solution provides trained security
@@ -667,7 +892,13 @@ export default function SecurityServicesPage() {
         >
           Call: +91 97109 46484
         </a>
-
+          <a
+  href="mailto:viprascrm@gmail.com?subject=Security%20Guard%20Services%20Enquiry"
+  aria-label="Email Vipras about security guard services"
+  className="flex rounded-full border border-white/25 px-6 py-3 text-center text-sm font-black text-white transition duration-300 hover:-translate-y-1 hover:bg-white/10"
+>
+  Email: viprascrm@gmail.com
+</a>
         <a
           href="https://wa.me/919710946484?text=Hello%20Vipras%20Facility%20Management%20Solution%2C%20I%20need%20security%20guard%20services.%20Please%20share%20the%20details."
           target="_blank"
@@ -679,7 +910,7 @@ export default function SecurityServicesPage() {
         </a>
 
         <a
-          href="https://maps.app.goo.gl/xcKVEwihDR2bqPkU6"
+          href="https://maps.app.goo.gl/tqgwt5ePtMRTEAxJ8"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="View Vipras office location on Google Maps"
@@ -687,6 +918,53 @@ export default function SecurityServicesPage() {
         >
           View Office on Google Maps
         </a>
+        <div className="pt-4">
+  <p className="mb-3 text-sm font-black uppercase tracking-[0.24em] text-[#d6b06a]">
+    Follow Vipras
+  </p>
+
+  <div className="grid grid-cols-2 gap-3">
+    <a
+      href="https://www.youtube.com/@viprasfacilitycrm8753"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Follow Vipras Facility Management Solution on YouTube"
+      className="rounded-full border border-white/25 px-4 py-3 text-center text-sm font-black text-white transition duration-300 hover:-translate-y-1 hover:bg-white/10"
+    >
+      YouTube
+    </a>
+
+    <a
+      href="https://www.linkedin.com/company/109659474/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Follow Vipras Facility Management Solution on LinkedIn"
+      className="rounded-full border border-white/25 px-4 py-3 text-center text-sm font-black text-white transition duration-300 hover:-translate-y-1 hover:bg-white/10"
+    >
+      LinkedIn
+    </a>
+
+    <a
+      href="https://www.instagram.com/viprasfacilitymanagement/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Follow Vipras Facility Management Solution on Instagram"
+      className="rounded-full border border-white/25 px-4 py-3 text-center text-sm font-black text-white transition duration-300 hover:-translate-y-1 hover:bg-white/10"
+    >
+      Instagram
+    </a>
+
+    <a
+      href="https://www.facebook.com/profile.php?id=61583160419137"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Follow Vipras Facility Management Solution on Facebook"
+      className="rounded-full border border-white/25 px-4 py-3 text-center text-sm font-black text-white transition duration-300 hover:-translate-y-1 hover:bg-white/10"
+    >
+      Facebook
+    </a>
+  </div>
+</div>
       </div>
     </div>
   </div>
