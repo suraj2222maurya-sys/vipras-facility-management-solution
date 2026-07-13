@@ -1,42 +1,149 @@
 ﻿import type { Metadata } from "next";
 import Link from "next/link";
-
 export const metadata: Metadata = {
-  title: "Technical Maintenance Services in Chennai, Tamil Nadu & Pan India",
+  title: {
+    absolute: "Technical Maintenance Services in Chennai | Vipras",
+  },
+
   description:
-    "Vipras Facility Management Solution provides technical maintenance services, electrical maintenance, plumbing services, AC repair, HVAC maintenance, geyser repair, building maintenance, apartment maintenance, hotel maintenance, school maintenance, factory maintenance and plant maintenance across Chennai, Tamil Nadu and Pan India.",
+    "Vipras Facility Management Solution provides electrical, plumbing, AC, HVAC, building and plant maintenance services in Chennai with Pan-India support.",
+
   keywords: [
     "technical maintenance services in Chennai",
-    "electrical maintenance services Chennai",
+    "technical maintenance services near me",
+    "technical maintenance company in Chennai",
+    "technical maintenance contractor in Chennai",
+    "maintenance contractor in Chennai",
+    "maintenance contractor near me",
+
+    "electrical maintenance services in Chennai",
+    "electrical maintenance services near me",
+    "electrical wiring services in Chennai",
+    "electrical wiring services near me",
+    "electrical repair services in Chennai",
+    "electrical repair services near me",
+    "electrician services in Chennai",
+    "electrician services near me",
+    "electrician near me",
+
+    "Plumber Services In Chennai",
+    "plumber services near me",
     "plumbing services in Chennai",
-    "AC repair services Chennai",
-    "HVAC maintenance services",
-    "geyser repair services",
-    "building maintenance services",
-    "apartment maintenance services",
-    "residential maintenance services",
-    "hotel maintenance services",
-    "school maintenance services",
-    "factory maintenance services",
-    "plant maintenance services",
-    "industrial maintenance services",
-    "electrical wiring services",
-    "plumbing maintenance Tamil Nadu",
-    "technical maintenance Pan India",
-    "maintenance contractor Chennai",
-    "facility maintenance services India",
+    "plumbing services near me",
+    "plumbing maintenance services in Chennai",
+    "plumbing maintenance services near me",
+    "plumber near me",
+    "AC repair services in Chennai",
+    "AC repair services near me",
+    "AC maintenance services in Chennai",
+    "AC maintenance services near me",
+    "AC service in Chennai",
+    "AC service near me",
+    "AC technician in Chennai",
+    "AC technician near me",
+    "HVAC maintenance services in Chennai",
+    "building maintenance services in Chennai",
+    "building maintenance services near me",
+    "commercial building maintenance services in Chennai",
+    "facility maintenance services in Chennai",
+    "facility maintenance services near me",
+    "Apartment Maintenance in Chennai",
+    "residential maintenance services in Chennai",
+    "residential maintenance services near me",
+    "hotel maintenance services in Chennai",
+    "hotel maintenance services near me",
+    "office maintenance services in Chennai",
+    "office maintenance services near me",
+    "corporate office maintenance services in Chennai",
+    "factory maintenance services in Chennai",
+    "factory maintenance services near me",
+    "industrial maintenance services in Chennai",
+    "industrial maintenance services near me",
+    "Plant Maintenance Services in Chennai",
+    "plant maintenance contractor in Chennai",
+    "Preventive Maintenance Service in Chennai",
+    "emergency maintenance services near me",
+
+    "general technician services in Chennai",
+    "general technician services near me",
+    "large project maintenance services",
+    "large project maintenance contractor",
+
+    "VIP Electrical Plumbing & AC Services",
+    "Vipras electrical plumbing and AC services",
+    "Pan-India Support & Maintenance Services",
   ],
+
+  authors: [
+    {
+      name: "Vipras Facility Management Solutions Private Limited",
+      url: "https://www.viprasfacility.com/",
+    },
+  ],
+
+  creator: "Vipras Facility Management Solutions Private Limited",
+
+  publisher: "Vipras Facility Management Solutions Private Limited",
+
+  category: "Technical Maintenance Services",
+
   alternates: {
-    canonical: "/services/technical-maintenance",
+    canonical:
+      "https://www.viprasfacility.com/services/technical-maintenance",
   },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+
   openGraph: {
-    title:
-      "Technical Maintenance Services | Vipras Facility Management Solution",
+    title: "Technical Maintenance Services in Chennai | Vipras",
+
     description:
-      "Trusted electrical, plumbing, AC, HVAC, geyser, building, apartment, factory and plant maintenance services across Chennai, Tamil Nadu and Pan India.",
-    url: "/services/technical-maintenance",
+      "Vipras Facility Management Solution provides electrical, plumbing, AC, HVAC, building and plant maintenance services in Chennai with Pan-India support.",
+
+    url:
+      "https://www.viprasfacility.com/services/technical-maintenance",
+
     siteName: "Vipras Facility Management Solution",
+
+    locale: "en_IN",
+
     type: "website",
+
+    images: [
+      {
+        url:
+          "https://www.viprasfacility.com/technical-maintenance-services-chennai-og.png",
+        width: 1731,
+        height: 909,
+        type: "image/png",
+        alt:
+          "Vipras Technical Maintenance Services in Chennai, Tamil Nadu and Pan India",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title: "Technical Maintenance Services in Chennai | Vipras",
+
+    description:
+      "Vipras Facility Management Solution provides electrical, plumbing, AC, HVAC, building and plant maintenance services in Chennai with Pan-India support.",
+
+    images: [
+      "https://www.viprasfacility.com/technical-maintenance-services-chennai-og.png",
+    ],
   },
 };
 
@@ -65,7 +172,6 @@ const qualityPoints = [
   "Reliable maintenance support for homes, apartments, hotels, schools, offices, factories and plants",
   "Quality-focused work with proper coordination, supervision and client satisfaction",
 ];
-
 const processSteps = [
   {
     title: "Requirement Check",
@@ -85,16 +191,446 @@ const processSteps = [
   },
 ];
 
+const technicalMaintenanceSchema = {
+  "@context": "https://schema.org",
+
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+
+      "@id": "https://www.viprasfacility.com/#organization",
+
+      name: "Vipras Facility Management Solution",
+
+      legalName:
+        "Vipras Facility Management Solutions Private Limited",
+
+      url: "https://www.viprasfacility.com/",
+
+      image:
+        "https://www.viprasfacility.com/technical-maintenance-services-chennai-og.png",
+
+      telephone: "+919710946484",
+
+      email: "viprascrm@gmail.com",
+
+      address: {
+  "@type": "PostalAddress",
+
+  streetAddress:
+    "No-495 A, Village High Rd, Sholinganallur",
+
+  addressLocality: "Chennai",
+
+  addressRegion: "Tamil Nadu",
+
+  postalCode: "600119",
+
+  addressCountry: "IN",
+},
+
+geo: {
+  "@type": "GeoCoordinates",
+
+  latitude: 12.9021541,
+
+  longitude: 80.2326451,
+},
+
+hasMap:
+  "https://maps.app.goo.gl/GB9cQDMvAaYzAPR59",
+
+      openingHoursSpecification: [
+        {
+          "@type": "OpeningHoursSpecification",
+
+          dayOfWeek: [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday",
+          ],
+
+          opens: "00:00",
+
+          closes: "23:59",
+        },
+      ],
+
+      areaServed: [
+        {
+          "@type": "City",
+          name: "Chennai",
+        },
+
+        {
+          "@type": "AdministrativeArea",
+          name: "Tamil Nadu",
+        },
+
+        {
+          "@type": "Country",
+          name: "India",
+        },
+      ],
+
+      contactPoint: [
+        {
+          "@type": "ContactPoint",
+
+          name: "Customer Support",
+
+          telephone: "+919710946484",
+
+          email: "viprascrm@gmail.com",
+
+          contactType: "customer support",
+
+          areaServed: "IN",
+
+          availableLanguage: "English",
+        },
+
+        {
+          "@type": "ContactPoint",
+
+          name: "WhatsApp Support",
+
+          telephone: "+919710946484",
+
+          url: "https://wa.me/919710946484",
+
+          contactType: "customer support",
+
+          areaServed: "IN",
+
+          availableLanguage: "English",
+        },
+      ],
+
+      sameAs: [
+        "https://www.youtube.com/@viprasfacilitycrm8753",
+
+        "https://www.linkedin.com/company/109659474/",
+
+        "https://www.facebook.com/profile.php?id=61583160419137",
+
+        "https://www.instagram.com/viprasfacilitymanagement/",
+      ],
+    },
+
+    {
+      "@type": "WebSite",
+
+      "@id": "https://www.viprasfacility.com/#website",
+
+      url: "https://www.viprasfacility.com/",
+
+      name: "Vipras Facility Management Solution",
+
+      publisher: {
+        "@id": "https://www.viprasfacility.com/#organization",
+      },
+
+      inLanguage: "en-IN",
+    },
+
+    {
+      "@type": "WebPage",
+
+      "@id":
+        "https://www.viprasfacility.com/services/technical-maintenance#webpage",
+
+      url:
+        "https://www.viprasfacility.com/services/technical-maintenance",
+
+      name:
+        "Technical Maintenance Services in Chennai | Vipras",
+
+      description:
+  "Vipras Facility Management Solution provides electrical, plumbing, AC, HVAC, building and plant maintenance services in Chennai with Pan-India support.",
+
+dateModified: "2026-07-13",
+
+isPartOf: {
+  "@id": "https://www.viprasfacility.com/#website",
+},
+
+      publisher: {
+        "@id": "https://www.viprasfacility.com/#organization",
+      },
+
+      mainEntity: {
+        "@id":
+          "https://www.viprasfacility.com/services/technical-maintenance#service",
+      },
+
+      breadcrumb: {
+        "@id":
+          "https://www.viprasfacility.com/services/technical-maintenance#breadcrumb",
+      },
+
+      primaryImageOfPage: {
+        "@type": "ImageObject",
+
+        "@id":
+          "https://www.viprasfacility.com/services/technical-maintenance#primaryimage",
+
+        url:
+          "https://www.viprasfacility.com/technical-maintenance-services-chennai-og.png",
+
+        contentUrl:
+          "https://www.viprasfacility.com/technical-maintenance-services-chennai-og.png",
+
+        width: 1731,
+
+        height: 909,
+
+        caption:
+          "Vipras Technical Maintenance Services in Chennai, Tamil Nadu and Pan India",
+      },
+
+      inLanguage: "en-IN",
+    },
+
+    {
+      "@type": "Service",
+
+      "@id":
+        "https://www.viprasfacility.com/services/technical-maintenance#service",
+
+      name: "Technical Maintenance Services in Chennai",
+
+      alternateName: [
+        "Electrical Maintenance Services in Chennai",
+        "Plumbing Services in Chennai",
+        "AC Repair and Maintenance Services in Chennai",
+        "HVAC Maintenance Services in Chennai",
+        "Building Maintenance Services in Chennai",
+        "Plant Maintenance Services in Chennai",
+      ],
+
+      serviceType: [
+        "Technical Maintenance Services",
+        "Electrical Maintenance",
+        "Electrical Wiring Work",
+        "Plumbing Services",
+        "AC Repair and Maintenance",
+        "HVAC Maintenance",
+        "Geyser Repair Support",
+        "Apartment Maintenance",
+        "Residential Maintenance",
+        "Hotel Maintenance",
+        "School Maintenance",
+        "Corporate Office Maintenance",
+        "Factory and Plant Maintenance",
+        "Industrial Technical Support",
+        "Preventive Maintenance",
+        "Breakdown Support",
+        "Large Project Maintenance",
+      ],
+
+      description:
+        "Vipras Facility Management Solution provides technical maintenance services for electrical wiring, plumbing, AC, HVAC, buildings, apartments, offices, factories, plants and large projects.",
+
+      url:
+        "https://www.viprasfacility.com/services/technical-maintenance",
+
+      mainEntityOfPage: {
+        "@id":
+          "https://www.viprasfacility.com/services/technical-maintenance#webpage",
+      },
+
+     provider: {
+  "@id": "https://www.viprasfacility.com/#organization",
+},
+
+brand: {
+  "@id": "https://www.viprasfacility.com/#organization",
+},
+
+providerMobility: "dynamic",
+
+audience: [
+  {
+    "@type": "Audience",
+    audienceType:
+      "Homeowners, residential properties and apartment communities",
+  },
+  {
+    "@type": "Audience",
+    audienceType:
+      "Hotels, schools, commercial buildings and corporate offices",
+  },
+  {
+    "@type": "Audience",
+    audienceType:
+      "Factories, plants and industrial facilities",
+  },
+  {
+    "@type": "Audience",
+    audienceType:
+      "Large projects and property management clients",
+  },
+],
+
+areaServed: [
+        {
+          "@type": "City",
+          name: "Chennai",
+        },
+
+        {
+          "@type": "AdministrativeArea",
+          name: "Tamil Nadu",
+        },
+
+        {
+          "@type": "Country",
+          name: "India",
+        },
+      ],
+
+      availableChannel: [
+        {
+          "@type": "ServiceChannel",
+
+          name: "Phone Support",
+
+          servicePhone: {
+            "@type": "ContactPoint",
+
+            telephone: "+919710946484",
+
+            contactType: "customer support",
+          },
+        },
+
+        {
+          "@type": "ServiceChannel",
+
+          name: "WhatsApp Support",
+
+          serviceUrl: "https://wa.me/919710946484",
+        },
+
+        {
+          "@type": "ServiceChannel",
+
+          name: "Email Support",
+
+          serviceUrl: "mailto:viprascrm@gmail.com",
+        },
+      ],
+
+      hoursAvailable: {
+        "@type": "OpeningHoursSpecification",
+
+        dayOfWeek: [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday",
+        ],
+
+        opens: "00:00",
+
+        closes: "23:59",
+      },
+
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+
+        name: "Technical Maintenance Services",
+
+        itemListElement: maintenanceServices.map((service) => ({
+          "@type": "Offer",
+
+          itemOffered: {
+            "@type": "Service",
+
+            name: service,
+
+            provider: {
+              "@id":
+                "https://www.viprasfacility.com/#organization",
+            },
+          },
+        })),
+      },
+    },
+
+    {
+      "@type": "BreadcrumbList",
+
+      "@id":
+        "https://www.viprasfacility.com/services/technical-maintenance#breadcrumb",
+
+      itemListElement: [
+        {
+          "@type": "ListItem",
+
+          position: 1,
+
+          name: "Home",
+
+          item: "https://www.viprasfacility.com/",
+        },
+
+        {
+          "@type": "ListItem",
+
+          position: 2,
+
+          name: "Services",
+
+          item:
+            "https://www.viprasfacility.com/services",
+        },
+
+        {
+          "@type": "ListItem",
+
+          position: 3,
+
+          name: "Technical Maintenance Services",
+
+          item:
+            "https://www.viprasfacility.com/services/technical-maintenance",
+        },
+      ],
+    },
+  ],
+};
+
 export default function TechnicalMaintenancePage() {
   return (
     <main className="overflow-hidden bg-[#fffaf2]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            technicalMaintenanceSchema,
+          ).replace(/</g, "\\u003c"),
+        }}
+      />
+
       <section className="relative overflow-hidden bg-[#fffaf2]">
   <div className="relative">
     <img
-      src="/technical-maintenance-banner.png (2).png"
-      alt="Vipras Facility Management Solution technical maintenance team"
-      className="h-auto w-full object-contain"
-    />
+  src="/technical-maintenance-banner.png (2).png"
+  alt="Vipras technical maintenance services team in Chennai for electrical, plumbing, AC and HVAC support"
+  loading="eager"
+  fetchPriority="high"
+  decoding="async"
+  className="h-auto w-full object-contain"
+/>
 
     <div className="pointer-events-none absolute inset-0 hidden bg-gradient-to-r from-[#fffaf2]/95 via-[#fffaf2]/65 to-transparent lg:block" />
 
@@ -105,9 +641,9 @@ export default function TechnicalMaintenancePage() {
             Technical Maintenance Services
           </p>
 
-          <h1 className="mt-3 text-3xl font-black leading-tight text-[#2f281f] xl:text-4xl">
-            Reliable Electrical, Plumbing, AC and Building Maintenance Support
-          </h1>
+          <h2 className="mt-3 text-3xl font-black leading-tight text-[#2f281f] xl:text-4xl">
+  Reliable Electrical, Plumbing, AC and Building Maintenance Support
+</h2>
 
           <p className="mt-4 text-sm font-medium leading-7 text-[#6f6254] xl:text-base">
             Professional technical maintenance services for homes, apartments,
@@ -124,9 +660,10 @@ export default function TechnicalMaintenancePage() {
             </Link>
 
             <a
-              href="https://wa.me/919710946484?text=Hello%20Vipras%20Facility%20Management%20Solution%2C%20I%20would%20like%20to%20know%20more%20about%20your%20technical%20maintenance%20services."
-              target="_blank"
-              rel="noopener noreferrer"
+            href="https://wa.me/919710946484?text=Hello%20Vipras%20Facility%20Management%20Solution%2C%20I%20would%20like%20to%20know%20more%20about%20your%20technical%20maintenance%20services."
+          aria-label="Chat with Vipras on WhatsApp about technical maintenance services"
+          target="_blank"
+          rel="noopener noreferrer"
               className="rounded-full border border-[#d6b06a] bg-white/80 px-7 py-3 text-sm font-black text-[#4a3720] shadow-sm backdrop-blur transition duration-300 hover:-translate-y-1 hover:bg-white"
             >
               WhatsApp Now
@@ -143,9 +680,9 @@ export default function TechnicalMaintenancePage() {
         Technical Maintenance Services
       </p>
 
-      <h1 className="mt-3 text-2xl font-black leading-tight text-[#2f281f] sm:text-3xl">
-        Reliable Electrical, Plumbing, AC and Building Maintenance Support
-      </h1>
+     <h2 className="mt-3 text-2xl font-black leading-tight text-[#2f281f] sm:text-3xl">
+  Reliable Electrical, Plumbing, AC and Building Maintenance Support
+</h2>
 
       <p className="mt-3 text-sm font-medium leading-7 text-[#6f6254] sm:text-base">
         Professional technical maintenance services for homes, apartments,
@@ -174,7 +711,11 @@ export default function TechnicalMaintenancePage() {
   </div>
 </section>
 
-      <section className="relative px-5 pb-14 pt-8 sm:px-8 lg:px-12">
+<section
+  id="technical-maintenance-services"
+  aria-labelledby="technical-maintenance-heading"
+  className="relative px-5 pb-14 pt-8 sm:px-8 lg:px-12"
+>
         <div className="absolute left-[-120px] top-10 h-80 w-80 rounded-full bg-[#d6b06a]/25 blur-3xl" />
         <div className="absolute right-[-140px] bottom-0 h-96 w-96 rounded-full bg-[#eadfca]/80 blur-3xl" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,#d6b06a_1px,transparent_0)] bg-[length:30px_30px] opacity-15" />
@@ -185,10 +726,13 @@ export default function TechnicalMaintenancePage() {
               Technical Maintenance
             </p>
 
-            <h1 className="mt-4 max-w-4xl text-3xl font-black leading-tight text-[#2f281f] sm:text-4xl lg:text-5xl">
-              Trusted Technical Maintenance Services for Homes, Buildings,
-              Offices, Factories and Large Projects
-            </h1>
+            <h1
+  id="technical-maintenance-heading"
+  className="mt-4 max-w-4xl text-3xl font-black leading-tight text-[#2f281f] sm:text-4xl lg:text-5xl"
+>
+  Trusted Technical Maintenance Services for Homes, Buildings,
+  Offices, Factories and Large Projects
+</h1>
 
             <p className="mt-5 max-w-4xl text-base font-medium leading-8 text-[#6f6254] sm:text-lg">
               Vipras Facility Management Solution provides professional
@@ -219,15 +763,22 @@ export default function TechnicalMaintenancePage() {
             </div>
           </div>
 
-          <div className="mt-10 grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+        <section
+  id="technical-maintenance-solutions"
+  aria-labelledby="technical-maintenance-solutions-heading"
+  className="mt-10 grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-start"
+>
             <div>
               <p className="text-sm font-black uppercase tracking-[0.32em] text-[#b98a3c]">
                 What We Provide
               </p>
 
-              <h2 className="mt-4 text-3xl font-black leading-tight text-[#2f281f] sm:text-4xl">
-                Complete Maintenance Support for Every Property and Project
-              </h2>
+<h2
+  id="technical-maintenance-solutions-heading"
+  className="mt-4 text-3xl font-black leading-tight text-[#2f281f] sm:text-4xl"
+>
+  Complete Maintenance Support for Every Property and Project
+</h2>
 
               <p className="mt-5 text-base font-medium leading-8 text-[#6f6254]">
                 Whether the requirement is a small home repair, apartment
@@ -238,29 +789,32 @@ export default function TechnicalMaintenancePage() {
                 execution.
               </p>
 
-              <div className="mt-6 space-y-4">
-                {qualityPoints.map((point) => (
-                  <div
-                    key={point}
-                    className="rounded-2xl border border-[#eadfca] bg-white/85 p-4 text-sm font-black leading-7 text-[#3d3328] shadow-lg shadow-black/5"
-                  >
-                    {point}
-                  </div>
-                ))}
-              </div>
+              <ul
+  className="mt-6 space-y-4"
+  aria-label="Technical maintenance service benefits"
+>
+  {qualityPoints.map((point) => (
+    <li
+      key={point}
+      className="rounded-2xl border border-[#eadfca] bg-white/85 p-4 text-sm font-black leading-7 text-[#3d3328] shadow-lg shadow-black/5"
+    >
+      {point}
+    </li>
+  ))}
+</ul>
             </div>
 
             <div className="grid gap-4 sm:grid-cols-2">
-              {maintenanceServices.map((service) => (
-                <div
-                  key={service}
-                  className="rounded-2xl border border-[#eadfca] bg-white/90 p-5 text-sm font-black text-[#3d3328] shadow-lg shadow-black/5 transition duration-300 hover:-translate-y-1 hover:border-[#d6b06a] hover:shadow-xl hover:shadow-[#d6b06a]/15"
-                >
-                  {service}
-                </div>
-              ))}
+  {maintenanceServices.map((service) => (
+    <div
+      key={service}
+      className="rounded-2xl border border-[#eadfca] bg-white/90 p-5 text-sm font-black text-[#3d3328] shadow-lg shadow-black/5 transition duration-300 hover:-translate-y-1 hover:border-[#d6b06a] hover:shadow-xl hover:shadow-[#d6b06a]/15"
+    >
+      {service}
+    </div>
+  ))}
             </div>
-          </div>
+          </section>
 
           <div className="mt-10 rounded-[2rem] border border-[#eadfca] bg-white/90 p-6 shadow-2xl shadow-black/10 backdrop-blur sm:p-8 lg:p-10">
             <div className="mx-auto max-w-3xl text-center">

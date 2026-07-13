@@ -5,6 +5,7 @@ const homeLastModified = new Date("2026-06-30");
 const servicesLastModified = new Date("2026-06-30");
 const servicePagesLastModified = new Date("2026-06-30");
 const securityServicesLastModified = new Date("2026-07-13");
+const technicalMaintenanceLastModified = new Date("2026-07-13");
 const companyPagesLastModified = new Date("2026-07-09");
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes: MetadataRoute.Sitemap = [
@@ -45,11 +46,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   priority: 0.9,
 },
     {
-      url: `${baseUrl}/services/technical-maintenance`,
-      lastModified: servicePagesLastModified,
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
+  url: `${baseUrl}/services/technical-maintenance`,
+  lastModified: technicalMaintenanceLastModified,
+  changeFrequency: "monthly",
+  priority: 0.9,
+},
     {
       url: `${baseUrl}/services/fire-safety-manpower`,
       lastModified: servicePagesLastModified,

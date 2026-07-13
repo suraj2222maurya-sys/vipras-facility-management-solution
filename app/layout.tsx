@@ -105,8 +105,14 @@ phoneNumbers: ["+91 97109 46484"],
       "Facility Management Services in Chennai Tamil Nadu India | Vipras Facility Management",
     description:
   "Vipras Facility Management Solutions provides professional facility management, security, housekeeping, cleaning, manpower supply, electrical maintenance, plumbing maintenance, AC and HVAC maintenance, fire safety support and integrated facility management services in Chennai, Tamil Nadu and across India.",
-    images: ["/og-image.jpg.png"],
+      images: ["/og-image.jpg.png"],
   },
+
+  verification: {
+    google:
+      "-3dGvlA1neh9W0Yw02MljWKdVjKvhJZwCbTCXPezy1o",
+  },
+
   robots: {
     index: true,
     follow: true,
