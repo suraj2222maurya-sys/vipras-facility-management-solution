@@ -6,6 +6,7 @@ const servicesLastModified = new Date("2026-06-30");
 const servicePagesLastModified = new Date("2026-06-30");
 const securityServicesLastModified = new Date("2026-07-13");
 const technicalMaintenanceLastModified = new Date("2026-07-13");
+const housekeepingServicesLastModified = new Date("2026-07-14");
 const companyPagesLastModified = new Date("2026-07-09");
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes: MetadataRoute.Sitemap = [
@@ -33,9 +34,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   changeFrequency: "monthly",
   priority: 0.9,
 },
-    {
+  {
   url: `${baseUrl}/services/housekeeping-soft-services`,
-  lastModified: servicePagesLastModified,
+  lastModified: housekeepingServicesLastModified,
   changeFrequency: "monthly",
   priority: 0.9,
 },
