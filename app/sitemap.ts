@@ -7,6 +7,7 @@ const servicePagesLastModified = new Date("2026-06-30");
 const securityServicesLastModified = new Date("2026-07-13");
 const technicalMaintenanceLastModified = new Date("2026-07-13");
 const housekeepingServicesLastModified = new Date("2026-07-14");
+const fireSafetyManpowerLastModified = new Date("2026-07-15");
 const industrialManpowerLastModified = new Date("2026-07-15");
 const companyPagesLastModified = new Date("2026-07-09");
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -54,11 +55,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   priority: 0.9,
 },
     {
-      url: `${baseUrl}/services/fire-safety-manpower`,
-      lastModified: servicePagesLastModified,
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
+  url: `${baseUrl}/services/fire-safety-manpower`,
+  lastModified: fireSafetyManpowerLastModified,
+  changeFrequency: "monthly",
+  priority: 0.9,
+},
     {
       url: `${baseUrl}/services/integrated-facility-management`,
      lastModified: servicePagesLastModified,
