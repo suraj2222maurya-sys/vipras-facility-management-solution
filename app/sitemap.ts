@@ -7,6 +7,7 @@ const servicePagesLastModified = new Date("2026-06-30");
 const securityServicesLastModified = new Date("2026-07-13");
 const technicalMaintenanceLastModified = new Date("2026-07-13");
 const housekeepingServicesLastModified = new Date("2026-07-14");
+const industrialManpowerLastModified = new Date("2026-07-15");
 const companyPagesLastModified = new Date("2026-07-09");
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes: MetadataRoute.Sitemap = [
@@ -40,9 +41,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   changeFrequency: "monthly",
   priority: 0.9,
 },
-    {
+   {
   url: `${baseUrl}/services/industrial-manpower-supply`,
-  lastModified: servicePagesLastModified,
+  lastModified: industrialManpowerLastModified,
   changeFrequency: "monthly",
   priority: 0.9,
 },

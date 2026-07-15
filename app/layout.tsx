@@ -150,7 +150,7 @@ export default function RootLayout({
 >
      <body className="min-h-screen overflow-x-hidden bg-[#fffaf2] text-[#2f281f]">
   <Navbar />
-  <main className="min-h-screen bg-[#fffaf2]">{children}</main>
+  <div className="min-h-screen bg-[#fffaf2]">{children}</div>
   <FooterSection />
 </body>
     </html>
