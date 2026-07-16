@@ -140,71 +140,98 @@ const qualityPoints = [
 export default function IntegratedFacilityManagementPage() {
   return (
     <main className="overflow-hidden bg-white text-slate-950">
-      <section className="relative min-h-[720px] overflow-hidden bg-slate-950 px-5 py-20 text-white sm:px-8 sm:py-24 lg:min-h-[760px] lg:px-10 lg:py-28">
-  <div className="absolute inset-0">
+      <section className="relative overflow-hidden bg-slate-950 text-white">
+  {/* Mobile banner: displayed separately so the full image remains visible */}
+  <div className="relative bg-slate-900 lg:hidden">
     <img
       src="/vipras-ifm-hero-team-banner.webp.png"
-      alt="Vipras Facility Management professional team"
-      className="h-full w-full object-cover object-center"
+      alt="Vipras Facility Management professional integrated facility management team in Chennai"
+      className="h-auto w-full object-contain"
+      width="1600"
+      height="900"
+      loading="eager"
+      fetchPriority="high"
     />
-
-    <div className="absolute inset-0 bg-slate-950/25 lg:bg-slate-950/0" />
-
-<div className="absolute inset-0 bg-gradient-to-b from-slate-950/60 via-slate-950/25 to-slate-950/70 lg:bg-gradient-to-r lg:from-slate-950/70 lg:via-slate-950/25 lg:to-transparent" />
   </div>
 
-  <div className="relative mx-auto flex min-h-[560px] max-w-7xl items-center lg:min-h-[620px]">
-    <div className="max-w-3xl">
-      <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-bold text-emerald-100 backdrop-blur-md">
-        <FaShieldAlt className="text-emerald-300" />
-        Professional Facility Management Team
-      </div>
+  {/* Desktop and laptop background banner */}
+  <div className="absolute inset-0 hidden lg:block">
+    <img
+      src="/vipras-ifm-hero-team-banner.webp.png"
+      alt=""
+      aria-hidden="true"
+      className="h-full w-full object-cover object-center"
+      width="1920"
+      height="1080"
+      loading="eager"
+      fetchPriority="high"
+    />
 
-      <h1 className="max-w-4xl text-4xl font-black leading-tight tracking-tight sm:text-5xl lg:text-7xl">
-        Trusted People. Disciplined Operations. Reliable Facility Support.
-      </h1>
+    <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/60 to-slate-950/10" />
+  </div>
 
-      <p className="mt-6 max-w-3xl text-base leading-8 text-slate-100 sm:text-lg">
-        Vipras Facility Management Solution supports businesses with trained
-        security teams, housekeeping staff, manpower support, technical
-        maintenance and complete facility operations. Our leadership and site
-        teams work together to keep your workplace safe, clean, organized and
-        professionally managed every day.
-      </p>
+  {/* Hero content */}
+  <div className="relative bg-gradient-to-b from-slate-950 via-slate-900 to-emerald-950/90 px-5 py-12 sm:px-8 sm:py-16 lg:flex lg:min-h-[760px] lg:items-center lg:bg-transparent lg:px-10 lg:py-28">
+    <div className="mx-auto w-full max-w-7xl">
+      <div className="max-w-3xl">
+        <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-emerald-300/25 bg-emerald-400/10 px-4 py-2 text-xs font-bold text-emerald-100 backdrop-blur-md sm:mb-6 sm:text-sm">
+          <FaShieldAlt
+            className="shrink-0 text-emerald-300"
+            aria-hidden="true"
+          />
+          Professional Facility Management Team
+        </div>
 
-      <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-        <Link
-          href="/contact-us"
-          className="inline-flex items-center justify-center gap-3 rounded-full bg-emerald-500 px-7 py-4 text-sm font-black text-slate-950 shadow-xl shadow-emerald-950/30 transition hover:bg-emerald-400"
-        >
-          Get Facility Support
-          <FaArrowRight />
-        </Link>
+        <h1 className="max-w-4xl text-3xl font-black leading-tight tracking-tight sm:text-5xl lg:text-7xl">
+          Trusted People. Disciplined Operations. Reliable Facility Support.
+        </h1>
 
-        <a
-          href="tel:+919710946484"
-          className="inline-flex items-center justify-center gap-3 rounded-full border border-white/25 bg-white/10 px-7 py-4 text-sm font-black text-white backdrop-blur-md transition hover:bg-white hover:text-slate-950"
-        >
-          <FaPhoneAlt />
-          Speak With Vipras
-        </a>
-      </div>
+        <p className="mt-5 max-w-3xl text-base leading-7 text-slate-200 sm:mt-6 sm:text-lg sm:leading-8">
+          Vipras Facility Management Solution supports businesses with trained
+          security teams, housekeeping staff, manpower support, technical
+          maintenance and complete facility operations. Our leadership and site
+          teams work together to keep your workplace safe, clean, organized and
+          professionally managed every day.
+        </p>
 
-      <div className="mt-8 flex flex-wrap gap-3 text-sm font-semibold text-slate-100">
-        {[
-          "Security",
-          "Housekeeping",
-          "Manpower",
-          "Maintenance",
-          "Facility Operations",
-        ].map((item) => (
-          <span
-            key={item}
-            className="rounded-full border border-white/15 bg-white/10 px-4 py-2 backdrop-blur-md"
+        <div className="mt-7 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:gap-4">
+          <Link
+            href="/contact-us"
+            className="inline-flex min-h-12 items-center justify-center gap-3 rounded-full bg-emerald-500 px-6 py-3.5 text-sm font-black text-slate-950 shadow-xl shadow-emerald-950/30 transition hover:bg-emerald-400 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-emerald-300/50 sm:px-7 sm:py-4"
           >
-            {item}
-          </span>
-        ))}
+            Get Facility Support
+            <FaArrowRight aria-hidden="true" />
+          </Link>
+
+          <a
+            href="tel:+919710946484"
+            aria-label="Call Vipras Facility Management at +91 97109 46484"
+            className="inline-flex min-h-12 items-center justify-center gap-3 rounded-full border border-white/25 bg-white/10 px-6 py-3.5 text-sm font-black text-white backdrop-blur-md transition hover:bg-white hover:text-slate-950 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-white/40 sm:px-7 sm:py-4"
+          >
+            <FaPhoneAlt aria-hidden="true" />
+            Speak With Vipras
+          </a>
+        </div>
+
+        <div
+          className="mt-7 flex flex-wrap gap-2 sm:mt-8 sm:gap-3"
+          aria-label="Integrated facility management services"
+        >
+          {[
+            "Security",
+            "Housekeeping",
+            "Manpower",
+            "Maintenance",
+            "Facility Operations",
+          ].map((item) => (
+            <span
+              key={item}
+              className="rounded-full border border-white/15 bg-white/10 px-3 py-2 text-xs font-semibold text-slate-100 backdrop-blur-md sm:px-4 sm:text-sm"
+            >
+              {item}
+            </span>
+          ))}
+        </div>
       </div>
     </div>
   </div>
