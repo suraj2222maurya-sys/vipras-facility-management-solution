@@ -3,7 +3,8 @@
 const baseUrl = "https://www.viprasfacility.com";
 const homeLastModified = new Date("2026-06-30");
 const servicesLastModified = new Date("2026-06-30");
-const servicePagesLastModified = new Date("2026-06-30");
+
+const integratedFacilityManagementLastModified = new Date("2026-07-17");
 const securityServicesLastModified = new Date("2026-07-13");
 const technicalMaintenanceLastModified = new Date("2026-07-13");
 const housekeepingServicesLastModified = new Date("2026-07-14");
@@ -61,11 +62,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   priority: 0.9,
 },
     {
-      url: `${baseUrl}/services/integrated-facility-management`,
-     lastModified: servicePagesLastModified,
-      changeFrequency: "monthly",
-      priority: 0.9,
-    },
+  url: `${baseUrl}/services/integrated-facility-management`,
+  lastModified: integratedFacilityManagementLastModified,
+  changeFrequency: "monthly",
+  priority: 0.9,
+},
     {
       url: `${baseUrl}/solutions`,
       lastModified: new Date(),

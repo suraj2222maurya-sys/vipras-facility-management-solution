@@ -20,10 +20,27 @@ import {
 } from "react-icons/fa";
 
 export const metadata: Metadata = {
-  title:
-    "Integrated Facility Management Services in Chennai, Tamil Nadu & Pan India",
-  description:
-    "Vipras Facility Management Solution provides integrated facility management services including security, housekeeping, manpower, technical maintenance, fire and safety manpower, compliance support and complete facility operations for corporate, industrial, commercial, residential, healthcare, education, warehouse and government project environments across Chennai, Tamil Nadu, Andhra Pradesh, Bangalore and Pan India.",
+title: {
+  absolute:
+    "Integrated Facility Management Services in Chennai | Vipras",
+},
+
+description:
+  "Get integrated facility management in Chennai, Tamil Nadu and Pan India for security, housekeeping, manpower, maintenance, fire safety and site operations.",
+     applicationName: "Vipras Facility Management Solutions",
+
+  authors: [
+    {
+      name: "Vipras Facility Management Solutions",
+      url: "https://www.viprasfacility.com/",
+    },
+  ],
+
+  creator: "Vipras Facility Management Solutions",
+
+  publisher: "Vipras Facility Management Solutions",
+
+  category: "Integrated Facility Management Services",
   keywords: [
     "integrated facility management services in Chennai",
     "facility management company in Chennai",
@@ -37,17 +54,66 @@ export const metadata: Metadata = {
     "facility management for government projects",
     "Vipras Facility Management Solution",
   ],
+
   alternates: {
-    canonical: "/services/integrated-facility-management",
+    canonical:
+      "https://www.viprasfacility.com/services/integrated-facility-management",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
   openGraph: {
     title:
-      "Integrated Facility Management Services | Vipras Facility Management Solution",
-    description:
-      "Premium integrated facility management services for security, housekeeping, manpower, technical maintenance, fire safety and complete site operations.",
-    url: "/services/integrated-facility-management",
-    siteName: "Vipras Facility Management Solution",
+      "Integrated Facility Management Services in Chennai | Vipras",
+
+description:
+  "Get integrated facility management in Chennai, Tamil Nadu and Pan India for security, housekeeping, manpower, maintenance, fire safety and site operations.",
+
+    url: "https://www.viprasfacility.com/services/integrated-facility-management",
+
+    siteName: "Vipras Facility Management Solutions",
+
+    locale: "en_IN",
+
     type: "website",
+
+  
+      images: [
+  {
+    url: "https://www.viprasfacility.com/og-integrated-facility-management-chennai.jpg",
+    width: 1200,
+    height: 630,
+    alt: "Integrated Facility Management Services in Chennai by Vipras Facility Management Solutions",
+    type: "image/jpeg",
+  },
+],
+    
+  },
+
+  twitter: {
+    card: "summary_large_image",
+
+    title:
+      "Integrated Facility Management Services in Chennai | Vipras",
+
+description:
+  "Get integrated facility management in Chennai, Tamil Nadu and Pan India for security, housekeeping, manpower, maintenance, fire safety and site operations.",
+
+    images: [
+  "https://www.viprasfacility.com/og-integrated-facility-management-chennai.jpg",
+],
+     
   },
 };
 
@@ -55,31 +121,37 @@ const coreServices = [
   {
     icon: FaUserShield,
     title: "Security Services",
+        href: "/services/security-services",
     text: "Professional security manpower for corporate offices, factories, IT parks, apartments, warehouses, hospitals, schools and government project environments.",
   },
   {
     icon: FaBroom,
     title: "Housekeeping & Soft Services",
+       href: "/services/housekeeping-soft-services",
     text: "Clean, hygienic and well-maintained facility support for commercial buildings, industries, hospitals, schools, hotels, apartments and public spaces.",
   },
   {
     icon: FaUsers,
     title: "Industrial Manpower Supply",
+        href: "/services/industrial-manpower-supply",
     text: "Skilled, semi-skilled and unskilled manpower support for production units, warehouses, logistics hubs, loading areas and industrial operations.",
   },
   {
     icon: FaTools,
     title: "Technical Maintenance",
+        href: "/services/technical-maintenance",
     text: "Electrical, plumbing, HVAC, AC repair, building maintenance, preventive maintenance and breakdown support for smooth facility operations.",
   },
   {
     icon: FaFireExtinguisher,
     title: "Fire & Safety Manpower",
+        href: "/services/fire-safety-manpower",
     text: "Trained fire wardens, safety stewards and emergency response support for safer workplaces and compliance-focused environments.",
   },
   {
     icon: FaCogs,
     title: "Complete Facility Operations",
+        href: "/services/integrated-facility-management",
     text: "One coordinated facility management model with manpower planning, supervision, reporting, quality checks and client communication.",
   },
 ];
@@ -125,7 +197,258 @@ const process = [
     text: "We monitor attendance, service quality, client feedback, replacement support, issue escalation and daily operational coordination.",
   },
 ];
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id":
+    "https://www.viprasfacility.com/services/integrated-facility-management#service",
 
+  name: "Integrated Facility Management Services",
+  alternateName: "IFM Services",
+  serviceType: "Integrated Facility Management",
+
+  url: "https://www.viprasfacility.com/services/integrated-facility-management",
+  mainEntityOfPage: {
+    "@id":
+      "https://www.viprasfacility.com/services/integrated-facility-management#webpage",
+  },
+
+  category: [
+    "Integrated Facility Management",
+    "Facility Management Services",
+    "Security Services",
+    "Housekeeping Services",
+    "Industrial Manpower Supply",
+    "Technical Maintenance",
+    "Fire and Safety Manpower",
+  ],
+
+  description:
+  "Get integrated facility management in Chennai, Tamil Nadu and Pan India for security, housekeeping, manpower, maintenance, fire safety and site operations.",
+
+ image: {
+  "@type": "ImageObject",
+  url: "https://www.viprasfacility.com/og-integrated-facility-management-chennai.jpg",
+  contentUrl:
+    "https://www.viprasfacility.com/og-integrated-facility-management-chennai.jpg",
+  width: 1200,
+  height: 630,
+  caption:
+    "Integrated Facility Management Services by Vipras Facility Management Solutions",
+},
+
+  provider: {
+    "@type": ["Organization", "LocalBusiness"],
+    "@id": "https://www.viprasfacility.com/#organization",
+
+    name: "Vipras Facility Management Solutions",
+        description:
+      "Vipras Facility Management Solutions provides security, housekeeping, manpower, technical maintenance, fire safety and integrated facility management services for corporate, industrial, commercial, institutional and government project environments.",
+    url: "https://www.viprasfacility.com",
+         logo: {
+      "@type": "ImageObject",
+      "@id": "https://www.viprasfacility.com/#logo",
+
+      url: "https://www.viprasfacility.com/vipras-logo%20%282%29.png",
+
+      contentUrl:
+        "https://www.viprasfacility.com/vipras-logo%20%282%29.png",
+
+      caption: "Vipras Facility Management Solutions",
+    },
+        foundingDate: "2007",
+    telephone: "+91-97109-46484",
+    email: "viprascrm@gmail.com",
+
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "No-495 A, Village High Road, Sholinganallur",
+      addressLocality: "Chennai",
+      addressRegion: "Tamil Nadu",
+      postalCode: "600119",
+      addressCountry: "IN",
+    },
+
+    contactPoint: [
+      {
+        "@type": "ContactPoint",
+        contactType: "customer service",
+        telephone: "+91-97109-46484",
+        email: "viprascrm@gmail.com",
+        url: "https://wa.me/919710946484",
+        availableLanguage: ["English", "Tamil", "Hindi"],
+        areaServed: "IN",
+      },
+      {
+        "@type": "ContactPoint",
+        contactType: "sales",
+        telephone: "+91-97109-46484",
+        email: "viprascrm@gmail.com",
+        url: "https://www.viprasfacility.com/contact-us",
+        availableLanguage: ["English", "Tamil", "Hindi"],
+        areaServed: "IN",
+      },
+    ],
+
+    hasMap: "https://maps.app.goo.gl/AdKDs74NkyWpCfau8",
+
+    sameAs: [
+      "https://www.youtube.com/@viprasfacilitycrm8753",
+      "https://www.instagram.com/viprasfacilitymanagement/",
+      "https://www.linkedin.com/company/109659474/",
+      "https://www.facebook.com/profile.php?id=61583160419137",
+    ],
+
+   image:
+  "https://www.viprasfacility.com/og-integrated-facility-management-chennai.jpg",
+  },
+
+  areaServed: [
+    {
+      "@type": "City",
+      name: "Chennai",
+    },
+    {
+      "@type": "AdministrativeArea",
+      name: "Tamil Nadu",
+    },
+    {
+      "@type": "AdministrativeArea",
+      name: "Andhra Pradesh",
+    },
+    {
+      "@type": "City",
+      name: "Bengaluru",
+    },
+    {
+      "@type": "Country",
+      name: "India",
+    },
+  ],
+
+  audience: {
+    "@type": "BusinessAudience",
+    audienceType:
+      "Corporate, industrial, commercial, residential, healthcare, educational, warehouse and government project organizations",
+  },
+
+   hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    "@id":
+      "https://www.viprasfacility.com/services/integrated-facility-management#offer-catalog",
+
+    name: "Integrated Facility Management Services",
+
+    url: "https://www.viprasfacility.com/services/integrated-facility-management",
+
+    numberOfItems: 6,
+
+    itemListElement: [
+      {
+        "@type": "Offer",
+        "@id":
+          "https://www.viprasfacility.com/services/integrated-facility-management#security-services-offer",
+
+        url: "https://www.viprasfacility.com/services/security-services",
+
+        itemOffered: {
+          "@type": "Service",
+          "@id":
+            "https://www.viprasfacility.com/services/security-services#service",
+
+          name: "Security Services",
+
+          url: "https://www.viprasfacility.com/services/security-services",
+        },
+      },
+      {
+        "@type": "Offer",
+        "@id":
+          "https://www.viprasfacility.com/services/integrated-facility-management#housekeeping-services-offer",
+
+        url: "https://www.viprasfacility.com/services/housekeeping-soft-services",
+
+        itemOffered: {
+          "@type": "Service",
+          "@id":
+            "https://www.viprasfacility.com/services/housekeeping-soft-services#service",
+
+          name: "Housekeeping and Soft Services",
+
+          url: "https://www.viprasfacility.com/services/housekeeping-soft-services",
+        },
+      },
+      {
+        "@type": "Offer",
+        "@id":
+          "https://www.viprasfacility.com/services/integrated-facility-management#industrial-manpower-offer",
+
+        url: "https://www.viprasfacility.com/services/industrial-manpower-supply",
+
+        itemOffered: {
+          "@type": "Service",
+          "@id":
+            "https://www.viprasfacility.com/services/industrial-manpower-supply#service",
+
+          name: "Industrial Manpower Supply",
+
+          url: "https://www.viprasfacility.com/services/industrial-manpower-supply",
+        },
+      },
+      {
+        "@type": "Offer",
+        "@id":
+          "https://www.viprasfacility.com/services/integrated-facility-management#technical-maintenance-offer",
+
+        url: "https://www.viprasfacility.com/services/technical-maintenance",
+
+        itemOffered: {
+          "@type": "Service",
+          "@id":
+            "https://www.viprasfacility.com/services/technical-maintenance#service",
+
+          name: "Technical Maintenance Services",
+
+          url: "https://www.viprasfacility.com/services/technical-maintenance",
+        },
+      },
+      {
+        "@type": "Offer",
+        "@id":
+          "https://www.viprasfacility.com/services/integrated-facility-management#fire-safety-offer",
+
+        url: "https://www.viprasfacility.com/services/fire-safety-manpower",
+
+        itemOffered: {
+          "@type": "Service",
+          "@id":
+            "https://www.viprasfacility.com/services/fire-safety-manpower#service",
+
+          name: "Fire and Safety Manpower",
+
+          url: "https://www.viprasfacility.com/services/fire-safety-manpower",
+        },
+      },
+      {
+        "@type": "Offer",
+        "@id":
+          "https://www.viprasfacility.com/services/integrated-facility-management#integrated-facility-management-offer",
+
+        url: "https://www.viprasfacility.com/services/integrated-facility-management",
+
+        itemOffered: {
+          "@type": "Service",
+          "@id":
+            "https://www.viprasfacility.com/services/integrated-facility-management#service",
+
+          name: "Integrated Facility Management Services",
+
+          url: "https://www.viprasfacility.com/services/integrated-facility-management",
+        },
+      },
+    ],
+  },
+};
 const qualityPoints = [
   "Single-window facility management support for multiple services",
   "Experienced company working since 2007",
@@ -136,11 +459,145 @@ const qualityPoints = [
   "Flexible service planning based on site requirement",
   "CTA-focused page structure for lead generation",
 ];
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "@id":
+    "https://www.viprasfacility.com/services/integrated-facility-management#breadcrumb",
 
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: {
+        "@type": "WebPage",
+        "@id": "https://www.viprasfacility.com/",
+        url: "https://www.viprasfacility.com/",
+        name: "Vipras Facility Management Solutions",
+      },
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Integrated Facility Management Services",
+      item: {
+        "@type": "WebPage",
+        "@id":
+          "https://www.viprasfacility.com/services/integrated-facility-management",
+        url: "https://www.viprasfacility.com/services/integrated-facility-management",
+        name: "Integrated Facility Management Services",
+      },
+    },
+  ],
+};
+const webPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id":
+    "https://www.viprasfacility.com/services/integrated-facility-management#webpage",
+
+  url: "https://www.viprasfacility.com/services/integrated-facility-management",
+
+  name: "Integrated Facility Management Services in Chennai | Vipras",
+
+  description:
+  "Get integrated facility management in Chennai, Tamil Nadu and Pan India for security, housekeeping, manpower, maintenance, fire safety and site operations.",
+
+  inLanguage: "en-IN",
+
+  isPartOf: {
+    "@type": "WebSite",
+    "@id": "https://www.viprasfacility.com/#website",
+    url: "https://www.viprasfacility.com/",
+    name: "Vipras Facility Management Solutions",
+  },
+
+  about: {
+    "@id":
+      "https://www.viprasfacility.com/services/integrated-facility-management#service",
+  },
+
+  mainEntity: {
+    "@id":
+      "https://www.viprasfacility.com/services/integrated-facility-management#service",
+  },
+  relatedLink: [
+    "https://www.viprasfacility.com/services/security-services",
+    "https://www.viprasfacility.com/services/housekeeping-soft-services",
+    "https://www.viprasfacility.com/services/industrial-manpower-supply",
+    "https://www.viprasfacility.com/services/technical-maintenance",
+    "https://www.viprasfacility.com/services/fire-safety-manpower",
+  ],
+  significantLink: [
+    "https://www.viprasfacility.com/contact-us",
+    "https://wa.me/919710946484",
+  ],
+   
+  breadcrumb: {
+    "@id":
+      "https://www.viprasfacility.com/services/integrated-facility-management#breadcrumb",
+  },
+
+  primaryImageOfPage: {
+  "@type": "ImageObject",
+  "@id":
+    "https://www.viprasfacility.com/services/integrated-facility-management#primaryimage",
+
+  url: "https://www.viprasfacility.com/og-integrated-facility-management-chennai.jpg",
+
+  contentUrl:
+    "https://www.viprasfacility.com/og-integrated-facility-management-chennai.jpg",
+
+  width: 1200,
+  height: 630,
+
+  caption:
+    "Integrated Facility Management Services by Vipras Facility Management Solutions",
+},
+
+  publisher: {
+    "@id": "https://www.viprasfacility.com/#organization",
+  },
+
+  potentialAction: {
+    "@type": "ReadAction",
+    target: [
+      "https://www.viprasfacility.com/services/integrated-facility-management",
+    ],
+  },
+};
 export default function IntegratedFacilityManagementPage() {
   return (
     <main className="overflow-hidden bg-white text-slate-950">
-      <section className="relative overflow-hidden bg-slate-950 text-white">
+            <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(serviceSchema).replace(/</g, "\\u003c"),
+        }}
+      />
+            <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbSchema).replace(
+            /</g,
+            "\\u003c",
+          ),
+        }}
+      />
+            <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(webPageSchema).replace(
+            /</g,
+            "\\u003c",
+          ),
+        }}
+      />
+     <section
+  aria-labelledby="integrated-facility-management-title"
+  className="relative overflow-hidden bg-slate-950 text-white"
+>
   {/* Mobile banner: displayed separately so the full image remains visible */}
   <div className="relative bg-slate-900 lg:hidden">
     <img
@@ -167,11 +624,11 @@ export default function IntegratedFacilityManagementPage() {
       fetchPriority="high"
     />
 
-    <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/60 to-slate-950/10" />
+    <div className="absolute inset-0 bg-gradient-to-r from-slate-950/70 via-slate-950/25 to-transparent" />
   </div>
 
   {/* Hero content */}
-  <div className="relative bg-gradient-to-b from-slate-950 via-slate-900 to-emerald-950/90 px-5 py-12 sm:px-8 sm:py-16 lg:flex lg:min-h-[760px] lg:items-center lg:bg-transparent lg:px-10 lg:py-28">
+  <div className="relative bg-gradient-to-b from-slate-950 via-slate-900 to-emerald-950/90 px-5 py-12 sm:px-8 sm:py-16 lg:flex lg:min-h-[760px] lg:items-center lg:bg-none lg:px-10 lg:py-28">
     <div className="mx-auto w-full max-w-7xl">
       <div className="max-w-3xl">
         <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-emerald-300/25 bg-emerald-400/10 px-4 py-2 text-xs font-bold text-emerald-100 backdrop-blur-md sm:mb-6 sm:text-sm">
@@ -181,8 +638,33 @@ export default function IntegratedFacilityManagementPage() {
           />
           Professional Facility Management Team
         </div>
+        <nav
+          aria-label="Breadcrumb"
+          className="mb-5 text-sm font-semibold text-slate-300"
+        >
+          <ol className="flex flex-wrap items-center gap-2">
+            <li>
+              <Link
+                href="/"
+                className="rounded-sm transition hover:text-emerald-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300"
+              >
+                Home
+              </Link>
+            </li>
 
-        <h1 className="max-w-4xl text-3xl font-black leading-tight tracking-tight sm:text-5xl lg:text-7xl">
+            <li aria-hidden="true" className="text-slate-500">
+              /
+            </li>
+
+            <li aria-current="page" className="text-emerald-300">
+              Integrated Facility Management Services
+            </li>
+          </ol>
+        </nav>
+        <h1
+  id="integrated-facility-management-title"
+  className="max-w-4xl text-3xl font-black leading-tight tracking-tight sm:text-5xl lg:text-7xl"
+>
           Trusted People. Disciplined Operations. Reliable Facility Support.
         </h1>
 
@@ -237,14 +719,20 @@ export default function IntegratedFacilityManagementPage() {
   </div>
 </section>
 
-      <section className="bg-white px-5 py-20 sm:px-8 lg:px-10">
+      <section
+  aria-labelledby="ifm-support-heading"
+  className="bg-white px-5 py-20 sm:px-8 lg:px-10"
+>
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
           <div>
             <p className="text-sm font-black uppercase tracking-[0.25em] text-emerald-700">
               Complete IFM Support
             </p>
 
-            <h2 className="mt-4 text-3xl font-black leading-tight text-slate-950 sm:text-4xl lg:text-5xl">
+<h2
+  id="ifm-support-heading"
+  className="mt-4 text-3xl font-black leading-tight text-slate-950 sm:text-4xl lg:text-5xl"
+>
               A premium facility management solution built for modern business
               environments.
             </h2>
@@ -299,13 +787,19 @@ export default function IntegratedFacilityManagementPage() {
         </div>
       </section>
 
-      <section className="bg-slate-50 px-5 py-20 sm:px-8 lg:px-10">
+      <section
+  aria-labelledby="included-ifm-services-heading"
+  className="bg-slate-50 px-5 py-20 sm:px-8 lg:px-10"
+>
         <div className="mx-auto max-w-7xl">
           <div className="max-w-3xl">
             <p className="text-sm font-black uppercase tracking-[0.25em] text-emerald-700">
               Services Included
             </p>
-            <h2 className="mt-4 text-3xl font-black leading-tight text-slate-950 sm:text-4xl">
+            <h2
+  id="included-ifm-services-heading"
+  className="mt-4 text-3xl font-black leading-tight text-slate-950 sm:text-4xl"
+>
               Integrated facility management services under one dependable
               system.
             </h2>
@@ -325,9 +819,14 @@ export default function IntegratedFacilityManagementPage() {
                 <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-50 text-2xl text-emerald-700 transition group-hover:bg-emerald-600 group-hover:text-white">
                   <item.icon />
                 </div>
-                <h3 className="mt-6 text-xl font-black text-slate-950">
-                  {item.title}
-                </h3>
+               <h3 className="mt-6 text-xl font-black text-slate-950">
+  <Link
+    href={item.href}
+    className="rounded-sm transition hover:text-emerald-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-600"
+  >
+    {item.title}
+  </Link>
+</h3>
                 <p className="mt-3 text-sm leading-7 text-slate-600">
                   {item.text}
                 </p>
@@ -337,14 +836,20 @@ export default function IntegratedFacilityManagementPage() {
         </div>
       </section>
 
-      <section className="px-5 py-20 sm:px-8 lg:px-10">
+      <section
+  aria-labelledby="industries-served-heading"
+  className="px-5 py-20 sm:px-8 lg:px-10"
+>
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <div>
             <p className="text-sm font-black uppercase tracking-[0.25em] text-emerald-700">
               Industries We Serve
             </p>
 
-            <h2 className="mt-4 text-3xl font-black leading-tight text-slate-950 sm:text-4xl">
+            <h2
+  id="industries-served-heading"
+  className="mt-4 text-3xl font-black leading-tight text-slate-950 sm:text-4xl"
+>
               Built for industrial, commercial, residential, healthcare,
               education and government project environments.
             </h2>
@@ -379,13 +884,19 @@ export default function IntegratedFacilityManagementPage() {
         </div>
       </section>
 
-      <section className="bg-slate-950 px-5 py-20 text-white sm:px-8 lg:px-10">
+    <section
+  aria-labelledby="ifm-process-heading"
+  className="bg-slate-950 px-5 py-20 text-white sm:px-8 lg:px-10"
+>
         <div className="mx-auto max-w-7xl">
           <div className="max-w-3xl">
             <p className="text-sm font-black uppercase tracking-[0.25em] text-emerald-300">
               How We Work
             </p>
-            <h2 className="mt-4 text-3xl font-black leading-tight sm:text-4xl">
+            <h2
+  id="ifm-process-heading"
+  className="mt-4 text-3xl font-black leading-tight sm:text-4xl"
+>
               A planned, supervised and quality-focused facility management
               process.
             </h2>
@@ -415,12 +926,18 @@ export default function IntegratedFacilityManagementPage() {
         </div>
       </section>
 
-      <section className="px-5 py-20 sm:px-8 lg:px-10">
+      <section
+  aria-labelledby="why-choose-vipras-ifm-heading"
+  className="px-5 py-20 sm:px-8 lg:px-10"
+>
         <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1fr_1fr] lg:items-center">
           <div className="rounded-[2rem] bg-gradient-to-br from-emerald-600 to-slate-950 p-8 text-white shadow-2xl shadow-emerald-100">
             <FaClipboardCheck className="text-5xl text-emerald-100" />
 
-            <h2 className="mt-6 text-3xl font-black leading-tight sm:text-4xl">
+         <h2
+  id="why-choose-vipras-ifm-heading"
+  className="mt-6 text-3xl font-black leading-tight sm:text-4xl"
+>
               Why choose Vipras for Integrated Facility Management?
             </h2>
 
@@ -468,7 +985,10 @@ export default function IntegratedFacilityManagementPage() {
         </div>
       </section>
 
-      <section className="bg-slate-50 px-5 py-20 sm:px-8 lg:px-10">
+     <section
+  aria-labelledby="ifm-service-coverage-heading"
+  className="bg-slate-50 px-5 py-20 sm:px-8 lg:px-10"
+>
         <div className="mx-auto max-w-7xl rounded-[2rem] border border-slate-200 bg-white p-7 shadow-sm sm:p-10">
           <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
             <div className="max-w-3xl">
@@ -476,7 +996,10 @@ export default function IntegratedFacilityManagementPage() {
                 Service Coverage
               </p>
 
-              <h2 className="mt-4 text-3xl font-black leading-tight text-slate-950 sm:text-4xl">
+              <h2
+  id="ifm-service-coverage-heading"
+  className="mt-4 text-3xl font-black leading-tight text-slate-950 sm:text-4xl"
+>
                 Integrated facility management services in Chennai, Tamil Nadu,
                 Andhra Pradesh, Bangalore and Pan India.
               </h2>
@@ -498,10 +1021,18 @@ export default function IntegratedFacilityManagementPage() {
                   <h3 className="font-black">
                     Vipras Facility Management Solution
                   </h3>
-                  <p className="mt-2 text-sm leading-7 text-slate-300">
-                    No-495 A, Village High Rd, Sholinganallur, Chennai, Tamil
-                    Nadu 600119
-                  </p>
+                  <address className="mt-2 not-italic text-sm leading-7 text-slate-300">
+                  <a
+                  href="https://maps.app.goo.gl/AdKDs74NkyWpCfau8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                 aria-label="View Vipras Facility Management Solutions on Google Maps"
+                 className="rounded-sm transition hover:text-emerald-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300"
+                 >
+               No-495 A, Village High Rd, Sholinganallur, Chennai, Tamil
+              Nadu 600119
+              </a>
+              </address>
                 </div>
               </div>
 
@@ -519,7 +1050,10 @@ export default function IntegratedFacilityManagementPage() {
         </div>
       </section>
 
-      <section className="px-5 pb-24 sm:px-8 sm:pb-20 lg:px-10">
+     <section
+  aria-labelledby="ifm-contact-cta-heading"
+  className="px-5 pb-24 sm:px-8 sm:pb-20 lg:px-10"
+>
         <div className="mx-auto max-w-7xl overflow-hidden rounded-[2rem] bg-slate-950">
           <div className="grid gap-8 p-8 sm:p-10 lg:grid-cols-[1fr_auto] lg:items-center">
             <div>
@@ -527,7 +1061,10 @@ export default function IntegratedFacilityManagementPage() {
                 Need Complete Facility Management?
               </p>
 
-              <h2 className="mt-4 text-3xl font-black leading-tight text-white sm:text-4xl">
+             <h2
+  id="ifm-contact-cta-heading"
+  className="mt-4 text-3xl font-black leading-tight text-white sm:text-4xl"
+>
                 Talk to Vipras and get a practical IFM service plan for your
                 site.
               </h2>
@@ -560,7 +1097,11 @@ export default function IntegratedFacilityManagementPage() {
         </div>
       </section>
 
-      <div className="fixed inset-x-0 bottom-0 z-40 border-t border-white/20 bg-slate-950/95 p-3 backdrop-blur-xl sm:hidden">
+      <div
+  role="navigation"
+  aria-label="Mobile contact actions"
+  className="fixed inset-x-0 bottom-0 z-40 border-t border-white/20 bg-slate-950/95 p-3 backdrop-blur-xl sm:hidden"
+>
         <div className="grid grid-cols-2 gap-3">
           <a
             href="tel:+919710946484"
