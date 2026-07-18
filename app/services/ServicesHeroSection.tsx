@@ -21,7 +21,8 @@ export default function ServicesHeroSection() {
   alt="Vipras facility management services team providing security, housekeeping and technical maintenance in Chennai"
   width={1672}
   height={941}
-  priority
+fetchPriority="high"
+loading="eager"
   sizes="100vw"
   quality={75}
   className="h-auto w-full object-contain"
