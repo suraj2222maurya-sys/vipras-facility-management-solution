@@ -2,8 +2,7 @@
 
 const baseUrl = "https://www.viprasfacility.com";
 const homeLastModified = new Date("2026-06-30");
-const servicesLastModified = new Date("2026-06-30");
-
+const servicesLastModified = new Date("2026-07-18");
 const integratedFacilityManagementLastModified = new Date("2026-07-17");
 const securityServicesLastModified = new Date("2026-07-13");
 const technicalMaintenanceLastModified = new Date("2026-07-13");

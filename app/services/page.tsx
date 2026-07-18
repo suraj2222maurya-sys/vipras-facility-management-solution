@@ -6,6 +6,56 @@ import WhyChooseServicesSection from "./WhyChooseServicesSection";
 import ServiceProcessSection from "./ServiceProcessSection";
 import ServicesFAQSection from "./ServicesFAQSection";
 import ServicesCTASection from "./ServicesCTASection";
+function serializeJsonLd(data: unknown): string {
+  return JSON.stringify(data).replace(/</g, "\\u003c");
+}
+const servicesAreaServed = [
+  {
+    "@type": "City",
+    name: "Chennai",
+    containedInPlace: {
+      "@type": "State",
+      name: "Tamil Nadu",
+    },
+  },
+  {
+    "@type": "State",
+    name: "Tamil Nadu",
+  },
+  {
+    "@type": "City",
+    name: "Bengaluru",
+    containedInPlace: {
+      "@type": "State",
+      name: "Karnataka",
+    },
+  },
+  {
+    "@type": "State",
+    name: "Andhra Pradesh",
+  },
+  {
+    "@type": "Country",
+    name: "India",
+  },
+];
+const servicesAvailableChannel = [
+  {
+    "@type": "ServiceChannel",
+    "@id": "https://www.viprasfacility.com/services#service-enquiry-channel",
+    name: "Vipras Service Enquiry Channel",
+    serviceUrl: "https://www.viprasfacility.com/contact-us",
+    availableLanguage: ["en", "ta", "hi"],
+    servicePhone: {
+      "@type": "ContactPoint",
+      "@id": "https://www.viprasfacility.com/#sales-contact-point",
+      telephone: "+919710946484",
+      contactType: "sales",
+      areaServed: "IN",
+      availableLanguage: ["en", "ta", "hi"],
+    },
+  },
+];
 const servicesBreadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -25,6 +75,20 @@ const servicesBreadcrumbSchema = {
     },
   ],
 };
+const servicesWebsiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://www.viprasfacility.com/#website",
+  url: "https://www.viprasfacility.com",
+  name: "Vipras Facility Management Solution",
+  alternateName: "Vipras",
+  description:
+    "Vipras Facility Management Solution provides professional facility management services across Chennai, Tamil Nadu, Bengaluru, Andhra Pradesh and Pan India.",
+  inLanguage: "en-IN",
+  publisher: {
+    "@id": "https://www.viprasfacility.com/#organization",
+  },
+};
 const servicesPageSchema = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
@@ -36,52 +100,193 @@ const servicesPageSchema = {
   inLanguage: "en-IN",
   primaryImageOfPage: {
   "@type": "ImageObject",
+  "@id": "https://www.viprasfacility.com/services#primaryimage",
   url: "https://www.viprasfacility.com/services-og-image.png",
+  contentUrl: "https://www.viprasfacility.com/services-og-image.png",
+  caption: "Vipras Facility Management Services in Chennai and Pan India",
+  representativeOfPage: true,
   width: 1706,
   height: 864,
 },
+thumbnailUrl: "https://www.viprasfacility.com/services-og-image.png",
 mainEntity: {
   "@type": "ItemList",
+  "@id": "https://www.viprasfacility.com/services#service-list",
+mainEntityOfPage: {
+  "@id": "https://www.viprasfacility.com/services#webpage",
+},
   name: "Vipras Facility Management Services",
+  itemListOrder: "https://schema.org/ItemListOrderAscending",
   numberOfItems: 6,
   itemListElement: [
-    {
-      "@type": "ListItem",
-      position: 1,
-      name: "Integrated Facility Management",
-      url: "https://www.viprasfacility.com/services/integrated-facility-management",
+   {
+  "@type": "ListItem",
+  position: 1,
+  name: "Integrated Facility Management",
+  url: "https://www.viprasfacility.com/services/integrated-facility-management",
+  item: {
+    "@type": "Service",
+    "@id":
+      "https://www.viprasfacility.com/services/integrated-facility-management#service",
+    name: "Integrated Facility Management",
+    serviceType: "Integrated Facility Management",
+    url: "https://www.viprasfacility.com/services/integrated-facility-management",
+    mainEntityOfPage:
+  "https://www.viprasfacility.com/services/integrated-facility-management",
+    areaServed: servicesAreaServed,
+    availableChannel: servicesAvailableChannel,
+    brand: {
+      "@id": "https://www.viprasfacility.com/#organization",
     },
-    {
-      "@type": "ListItem",
-      position: 2,
-      name: "Security Services",
-      url: "https://www.viprasfacility.com/services/security-services",
+    offers: {
+  "@id":
+    "https://www.viprasfacility.com/services/integrated-facility-management#offer",
+},
+    provider: {
+      "@id": "https://www.viprasfacility.com/#organization",
     },
-    {
-      "@type": "ListItem",
-      position: 3,
-      name: "Housekeeping and Soft Services",
-      url: "https://www.viprasfacility.com/services/housekeeping-soft-services",
+  },
+},
+{
+  "@type": "ListItem",
+  position: 2,
+  name: "Security Services",
+  url: "https://www.viprasfacility.com/services/security-services",
+  item: {
+    "@type": "Service",
+    "@id":
+      "https://www.viprasfacility.com/services/security-services#service",
+    name: "Security Services",
+    serviceType: "Security Services",
+    url: "https://www.viprasfacility.com/services/security-services",
+    mainEntityOfPage:
+  "https://www.viprasfacility.com/services/security-services",
+    areaServed: servicesAreaServed,
+    availableChannel: servicesAvailableChannel,
+    brand: {
+      "@id": "https://www.viprasfacility.com/#organization",
     },
-    {
-      "@type": "ListItem",
-      position: 4,
-      name: "Industrial Manpower Supply",
-      url: "https://www.viprasfacility.com/services/industrial-manpower-supply",
+    offers: {
+  "@id": "https://www.viprasfacility.com/services/security-services#offer",
+},
+    provider: {
+      "@id": "https://www.viprasfacility.com/#organization",
     },
-    {
-      "@type": "ListItem",
-      position: 5,
-      name: "Technical Maintenance",
-      url: "https://www.viprasfacility.com/services/technical-maintenance",
+  },
+},
+{
+  "@type": "ListItem",
+  position: 3,
+  name: "Housekeeping and Soft Services",
+  url: "https://www.viprasfacility.com/services/housekeeping-soft-services",
+  item: {
+    "@type": "Service",
+    "@id":
+      "https://www.viprasfacility.com/services/housekeeping-soft-services#service",
+    name: "Housekeeping and Soft Services",
+    serviceType: "Housekeeping and Soft Services",
+    url: "https://www.viprasfacility.com/services/housekeeping-soft-services",
+    mainEntityOfPage:
+  "https://www.viprasfacility.com/services/housekeeping-soft-services",
+    areaServed: servicesAreaServed,
+    availableChannel: servicesAvailableChannel,
+    brand: {
+      "@id": "https://www.viprasfacility.com/#organization",
     },
-    {
-      "@type": "ListItem",
-      position: 6,
-      name: "Fire Safety Manpower",
-      url: "https://www.viprasfacility.com/services/fire-safety-manpower",
+    offers: {
+  "@id":
+    "https://www.viprasfacility.com/services/housekeeping-soft-services#offer",
+},
+    provider: {
+      "@id": "https://www.viprasfacility.com/#organization",
     },
-  ],
+  },
+},
+{
+  "@type": "ListItem",
+  position: 4,
+  name: "Industrial Manpower Supply",
+  url: "https://www.viprasfacility.com/services/industrial-manpower-supply",
+  item: {
+    "@type": "Service",
+    "@id":
+      "https://www.viprasfacility.com/services/industrial-manpower-supply#service",
+    name: "Industrial Manpower Supply",
+    serviceType: "Industrial Manpower Supply",
+    url: "https://www.viprasfacility.com/services/industrial-manpower-supply",
+    mainEntityOfPage:
+  "https://www.viprasfacility.com/services/industrial-manpower-supply",
+    areaServed: servicesAreaServed,
+    availableChannel: servicesAvailableChannel,
+    brand: {
+      "@id": "https://www.viprasfacility.com/#organization",
+    },
+    offers: {
+  "@id":
+    "https://www.viprasfacility.com/services/industrial-manpower-supply#offer",
+},
+    provider: {
+      "@id": "https://www.viprasfacility.com/#organization",
+    },
+  },
+},
+{
+  "@type": "ListItem",
+  position: 5,
+  name: "Technical Maintenance",
+  url: "https://www.viprasfacility.com/services/technical-maintenance",
+  item: {
+    "@type": "Service",
+    "@id":
+      "https://www.viprasfacility.com/services/technical-maintenance#service",
+    name: "Technical Maintenance",
+    serviceType: "Technical Maintenance Services",
+    url: "https://www.viprasfacility.com/services/technical-maintenance",
+    mainEntityOfPage:
+  "https://www.viprasfacility.com/services/technical-maintenance",
+    areaServed: servicesAreaServed,
+    availableChannel: servicesAvailableChannel,
+    brand: {
+      "@id": "https://www.viprasfacility.com/#organization",
+    },
+    offers: {
+  "@id":
+    "https://www.viprasfacility.com/services/technical-maintenance#offer",
+},
+    provider: {
+      "@id": "https://www.viprasfacility.com/#organization",
+    },
+  },
+},
+{
+  "@type": "ListItem",
+  position: 6,
+  name: "Fire Safety Manpower",
+  url: "https://www.viprasfacility.com/services/fire-safety-manpower",
+  item: {
+    "@type": "Service",
+    "@id":
+      "https://www.viprasfacility.com/services/fire-safety-manpower#service",
+    name: "Fire Safety Manpower",
+    serviceType: "Fire Safety Manpower Services",
+    url: "https://www.viprasfacility.com/services/fire-safety-manpower",
+    mainEntityOfPage:
+  "https://www.viprasfacility.com/services/fire-safety-manpower",
+    areaServed: servicesAreaServed,
+    availableChannel: servicesAvailableChannel,
+    brand: {
+      "@id": "https://www.viprasfacility.com/#organization",
+    },
+    offers: {
+  "@id":
+    "https://www.viprasfacility.com/services/fire-safety-manpower#offer",
+},
+    provider: {
+      "@id": "https://www.viprasfacility.com/#organization",
+    },
+  },
+},
+],
 },
   about: {
   "@type": "Organization",
@@ -107,6 +312,7 @@ const servicesOrganizationSchema = {
   "@type": ["Organization", "LocalBusiness"],
   "@id": "https://www.viprasfacility.com/#organization",
   name: "Vipras Facility Management Solution",
+  alternateName: "Vipras",
   foundingDate: "2007",
   description:
   "Vipras Facility Management Solution provides security, housekeeping, manpower supply, technical maintenance, fire safety manpower and integrated facility management services across Chennai, Tamil Nadu, Bengaluru, Andhra Pradesh and Pan India.",
@@ -147,24 +353,129 @@ const servicesOrganizationSchema = {
   "Warehouse Facility Management",
   "School and College Facility Management",
 ],
+hasOfferCatalog: {
+  "@type": "OfferCatalog",
+  "@id": "https://www.viprasfacility.com/services#offer-catalog",
+  name: "Vipras Facility Management Services Catalog",
+  url: "https://www.viprasfacility.com/services",
+  itemListOrder: "https://schema.org/ItemListOrderAscending",
+  numberOfItems: 6,
+  itemListElement: [
+    {
+      "@type": "Offer",
+      "@id":
+        "https://www.viprasfacility.com/services/integrated-facility-management#offer",
+      url: "https://www.viprasfacility.com/services/integrated-facility-management",
+      offeredBy: {
+        "@id": "https://www.viprasfacility.com/#organization",
+      },
+      itemOffered: {
+        "@id":
+          "https://www.viprasfacility.com/services/integrated-facility-management#service",
+      },
+    },
+    {
+      "@type": "Offer",
+      "@id":
+        "https://www.viprasfacility.com/services/security-services#offer",
+      url: "https://www.viprasfacility.com/services/security-services",
+      offeredBy: {
+        "@id": "https://www.viprasfacility.com/#organization",
+      },
+      itemOffered: {
+        "@id":
+          "https://www.viprasfacility.com/services/security-services#service",
+      },
+    },
+    {
+      "@type": "Offer",
+      "@id":
+        "https://www.viprasfacility.com/services/housekeeping-soft-services#offer",
+      url: "https://www.viprasfacility.com/services/housekeeping-soft-services",
+      offeredBy: {
+        "@id": "https://www.viprasfacility.com/#organization",
+      },
+      itemOffered: {
+        "@id":
+          "https://www.viprasfacility.com/services/housekeeping-soft-services#service",
+      },
+    },
+    {
+      "@type": "Offer",
+      "@id":
+        "https://www.viprasfacility.com/services/industrial-manpower-supply#offer",
+      url: "https://www.viprasfacility.com/services/industrial-manpower-supply",
+      offeredBy: {
+        "@id": "https://www.viprasfacility.com/#organization",
+      },
+      itemOffered: {
+        "@id":
+          "https://www.viprasfacility.com/services/industrial-manpower-supply#service",
+      },
+    },
+    {
+      "@type": "Offer",
+      "@id":
+        "https://www.viprasfacility.com/services/technical-maintenance#offer",
+      url: "https://www.viprasfacility.com/services/technical-maintenance",
+      offeredBy: {
+        "@id": "https://www.viprasfacility.com/#organization",
+      },
+      itemOffered: {
+        "@id":
+          "https://www.viprasfacility.com/services/technical-maintenance#service",
+      },
+    },
+    {
+      "@type": "Offer",
+      "@id":
+        "https://www.viprasfacility.com/services/fire-safety-manpower#offer",
+      url: "https://www.viprasfacility.com/services/fire-safety-manpower",
+      offeredBy: {
+        "@id": "https://www.viprasfacility.com/#organization",
+      },
+      itemOffered: {
+        "@id":
+          "https://www.viprasfacility.com/services/fire-safety-manpower#service",
+      },
+    },
+  ],
+},
   url: "https://www.viprasfacility.com",
- logo: "https://www.viprasfacility.com/vipras-logo%20(2).png",
+logo: {
+  "@type": "ImageObject",
+  "@id": "https://www.viprasfacility.com/#logo",
+  url: "https://www.viprasfacility.com/vipras-logo%20(2).png",
+  contentUrl: "https://www.viprasfacility.com/vipras-logo%20(2).png",
+  caption: "Vipras Facility Management Solution",
+},
   image: "https://www.viprasfacility.com/services-og-image.png",
  telephone: "+919710946484",
   email: "viprascrm@gmail.com",
-  hasMap: "https://maps.app.goo.gl/7otbjggjfE9oBCZG7",
+  hasMap: "https://maps.app.goo.gl/PALDzrF9VnFk2qwr7",
   address: {
     "@type": "PostalAddress",
+    "@id": "https://www.viprasfacility.com/#postal-address",
     streetAddress: "No-495 A, Village High Road, Sholinganallur",
     addressLocality: "Chennai",
     addressRegion: "Tamil Nadu",
     postalCode: "600119",
     addressCountry: "IN",
   },
+  geo: {
+  "@type": "GeoCoordinates",
+  "@id": "https://www.viprasfacility.com/#geo",
+  latitude: 12.9021541,
+  longitude: 80.2326451,
+},
   areaServed: [
     {
       "@type": "City",
       name: "Chennai",
+      containedInPlace: {
+  "@type": "State",
+  name: "Tamil Nadu",
+},
     },
     {
       "@type": "State",
@@ -173,6 +484,10 @@ const servicesOrganizationSchema = {
     {
       "@type": "City",
       name: "Bengaluru",
+      containedInPlace: {
+  "@type": "State",
+  name: "Karnataka",
+},
     },
     {
       "@type": "State",
@@ -184,23 +499,25 @@ const servicesOrganizationSchema = {
     },
   ],
   contactPoint: [
-    {
-      "@type": "ContactPoint",
-   telephone: "+919710946484",
-      contactType: "sales",
-      url: "https://www.viprasfacility.com/contact-us",
-      areaServed: "IN",
-      availableLanguage: ["English", "Tamil", "Hindi"],
-    },
-    {
-      "@type": "ContactPoint",
-     telephone: "+919710946484",
-      contactType: "customer service",
-      url: "https://www.viprasfacility.com/contact-us",
-      areaServed: "IN",
-      availableLanguage: ["English", "Tamil", "Hindi"],
-    },
-  ],
+  {
+    "@type": "ContactPoint",
+    "@id": "https://www.viprasfacility.com/#sales-contact-point",
+    telephone: "+919710946484",
+    contactType: "sales",
+    url: "https://www.viprasfacility.com/contact-us",
+    areaServed: "IN",
+    availableLanguage: ["English", "Tamil", "Hindi"],
+  },
+  {
+    "@type": "ContactPoint",
+    "@id": "https://www.viprasfacility.com/#customer-service-contact-point",
+    telephone: "+919710946484",
+    contactType: "customer service",
+    url: "https://www.viprasfacility.com/contact-us",
+    areaServed: "IN",
+    availableLanguage: ["English", "Tamil", "Hindi"],
+  },
+],
   sameAs: [
     "https://www.facebook.com/profile.php?id=61583160419137",
     "https://www.linkedin.com/company/109659474/",
@@ -255,6 +572,7 @@ title: "Facility Management Services Company in Chennai | Vipras",
     url: "https://www.viprasfacility.com/services-og-image.png",
     width: 1706,
     height: 864,
+    type: "image/png",
     alt: "Vipras Facility Management Services in Chennai and Pan India",
   },
 ],
@@ -265,7 +583,13 @@ title: "Facility Management Services Company in Chennai | Vipras",
   title: "Facility Management Services Company in Chennai | Vipras",
   description:
     "Professional facility management services across Chennai, Tamil Nadu, Bengaluru, Andhra Pradesh and Pan India, including security, housekeeping, manpower, technical maintenance, fire safety and integrated facility management.",
- images: ["https://www.viprasfacility.com/services-og-image.png"],
+ images: [
+  {
+    url: "https://www.viprasfacility.com/services-og-image.png",
+    alt: "Vipras Facility Management Services in Chennai and Pan India",
+  },
+],
+ 
 },
 };
 
@@ -275,27 +599,35 @@ export default function ServicesPage() {
     <script
   type="application/ld+json"
   dangerouslySetInnerHTML={{
-    __html: JSON.stringify(servicesBreadcrumbSchema),
+    __html: serializeJsonLd(servicesBreadcrumbSchema),
   }}
 />
 <script
   type="application/ld+json"
   dangerouslySetInnerHTML={{
-    __html: JSON.stringify(servicesPageSchema),
+    __html: serializeJsonLd(servicesWebsiteSchema),
   }}
 />
 <script
   type="application/ld+json"
   dangerouslySetInnerHTML={{
-    __html: JSON.stringify(servicesOrganizationSchema),
+    __html: serializeJsonLd(servicesPageSchema),
   }}
 />
-      <ServicesHeroSection />
-      <AllServicesSection />
-      <WhyChooseServicesSection />
-      <ServiceProcessSection />
-      <ServicesFAQSection />
-      <ServicesCTASection />
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+__html: serializeJsonLd(servicesOrganizationSchema),
+  }}
+/>
+<main id="main-content">
+  <ServicesHeroSection />
+  <AllServicesSection />
+  <WhyChooseServicesSection />
+  <ServiceProcessSection />
+  <ServicesFAQSection />
+  <ServicesCTASection />
+</main>
     </>
   );
 }
