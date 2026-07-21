@@ -112,7 +112,7 @@ export default function ServiceProcessSection() {
                   {item.icon}
                 </div>
 
-                <span className="text-4xl font-black leading-none text-slate-200">
+<span className="text-4xl font-black leading-none text-slate-500">
                   {item.step}
                 </span>
               </div>

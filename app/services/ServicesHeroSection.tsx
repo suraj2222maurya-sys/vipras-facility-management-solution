@@ -89,7 +89,7 @@ loading="eager"
 
       <div className="mx-auto px-5 py-6 sm:px-8 lg:hidden">
         <div className="rounded-[1.5rem] border border-[#eadfca] bg-white/90 p-5 shadow-xl shadow-black/10 backdrop-blur sm:p-6">
-          <p className="text-xs font-black uppercase tracking-[0.28em] text-[#b98a3c]">
+         <p className="text-xs font-black uppercase tracking-[0.28em] text-[#7a551d]">
   Facility Management Services in Chennai & Pan India
 </p>
           <p className="mt-3 text-2xl font-black leading-tight text-[#2f281f] sm:text-3xl">
@@ -119,7 +119,7 @@ loading="eager"
 <Link
   href="/contact-us"
   aria-label="Request a free facility management service quote from Vipras"
-  className="rounded-full bg-[#b98a3c] px-6 py-3 text-sm font-black text-white shadow-lg shadow-[#b98a3c]/30"
+className="rounded-full bg-[#7a551d] px-6 py-3 text-sm font-black text-white shadow-lg shadow-[#b98a3c]/30"
 >
   Get a Free Quote
 </Link>
